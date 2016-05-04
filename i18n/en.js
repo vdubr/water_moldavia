@@ -78,6 +78,7 @@ i18n = {
   EH: 'EH',
 
   //Analyze tab
-  analyze: 'Analyze'
+  analyze: 'Analyze',
+  link: 'Link'
 
 }

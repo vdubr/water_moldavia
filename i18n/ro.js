@@ -12,9 +12,9 @@ i18n = {
   extremely: 'Extrem',
   middle: 'Mijloc',
   low: 'Scazut',
-  well: 'Bine',
-  fountain: 'Fintina',
-  drill: 'Masina de gaurit',
+  well: 'Foraj',
+  fountain: 'Fintina sapata',
+  drill: 'Izvor',
 
   //About tab
   about: 'Despre',
@@ -78,6 +78,7 @@ i18n = {
   EH: 'EH',
 
   //Analyze tab
-  analyze: 'Analiza'
+  analyze: 'Analiza',
+  link: 'Legătură'
 
 }

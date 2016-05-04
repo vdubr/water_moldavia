@@ -21875,7 +21875,7 @@ var Application = (function () {
 exports['default'] = Application;
 module.exports = exports['default'];
 
-},{"./Emitter":250,"./wellfilter/wellFilter":261,"babel-runtime/core-js/promise":8,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14}],249:[function(require,module,exports){
+},{"./Emitter":250,"./wellfilter/wellFilter":262,"babel-runtime/core-js/promise":8,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14}],249:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -21970,7 +21970,7 @@ var ApplicationView = (function (_Component) {
 exports['default'] = ApplicationView;
 module.exports = exports['default'];
 
-},{"./wellInfo/wellinfo":260,"./wellfilter/wellFilterView":262,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],250:[function(require,module,exports){
+},{"./wellInfo/wellinfo":261,"./wellfilter/wellFilterView":263,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],250:[function(require,module,exports){
 'use strict';
 
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
@@ -22006,6 +22006,10 @@ function msg(key) {
 
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
 
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
@@ -22018,6 +22022,9 @@ var _Application = require('./Application');
 
 var _Application2 = _interopRequireDefault(_Application);
 
+var baseURL = 'http://94.112.84.203:4446/test/';
+
+exports.baseURL = baseURL;
 var initialData = {
   loading: true,
   activeTab: 'fifth',
@@ -22033,6 +22040,18 @@ app.init();
 app.render();
 
 },{"./Application":248,"./ApplicationView":249,"babel-runtime/helpers/interop-require-default":14,"react":247}],253:[function(require,module,exports){
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var getPhotoID = function getPhotoID(photo) {
+  var photoStr = photo.toString();
+  return photoStr.substring(photoStr.length - 4);
+};
+exports.getPhotoID = getPhotoID;
+
+},{}],254:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22188,7 +22207,7 @@ var NavBar = (function (_Component) {
 exports['default'] = NavBar;
 module.exports = exports['default'];
 
-},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],254:[function(require,module,exports){
+},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],255:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22283,7 +22302,7 @@ var FotoRow = (function (_Component2) {
 exports.FotoRow = FotoRow;
 ;
 
-},{"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],255:[function(require,module,exports){
+},{"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],256:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22306,6 +22325,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _rows = require('./rows');
 
+var _photoShorter = require('../photoShorter');
+
 var ProtectionContent = (function (_Component) {
   _inherits(ProtectionContent, _Component);
 
@@ -22327,7 +22348,7 @@ var ProtectionContent = (function (_Component) {
           rows.push(_react2['default'].createElement(_rows.FotoRow, {
             key: i,
             fotoPath: this.props.fotoPath,
-            photoID: this.props.data[key],
+            photoID: (0, _photoShorter.getPhotoID)(this.props.data[key]),
             property: key }));
         } else {
           rows.push(_react2['default'].createElement(_rows.TableRow, {
@@ -22355,7 +22376,7 @@ var ProtectionContent = (function (_Component) {
 exports['default'] = ProtectionContent;
 module.exports = exports['default'];
 
-},{"./rows":254,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],256:[function(require,module,exports){
+},{"../photoShorter":253,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],257:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22378,6 +22399,10 @@ var _react2 = _interopRequireDefault(_react);
 
 var _rows = require('./rows');
 
+var _i18nI18n = require('../i18n/i18n');
+
+var _main = require('../main');
+
 var AnalyzeContent = (function (_Component) {
   _inherits(AnalyzeContent, _Component);
 
@@ -22393,18 +22418,37 @@ var AnalyzeContent = (function (_Component) {
     key: 'render',
     value: function render() {
       var rows = [];
-      for (var i in this._dataKeys) {
-        var key = this._dataKeys[i];
-        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: this.props.data[key] }));
-      }
-
+      // for (let i in this._dataKeys) {
+      //   let key = this._dataKeys[i]
+      //   rows.push(<TableRow key = {i} property = {key} val = {this.props.data[key]} />)
+      // }
+      var baseSamplePath = _main.baseURL + 'fotky/PDF/';
+      var sampleId = this.props.data.SampleId;
+      var sampleUrl = '' + baseSamplePath + sampleId + '.pdf';
       return _react2['default'].createElement(
         'table',
         { className: 'table' },
         _react2['default'].createElement(
           'tbody',
           null,
-          rows
+          _react2['default'].createElement(
+            'tr',
+            null,
+            _react2['default'].createElement(
+              'td',
+              null,
+              (0, _i18nI18n.msg)('analyze')
+            ),
+            _react2['default'].createElement(
+              'td',
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: sampleUrl, target: "_blank" },
+                (0, _i18nI18n.msg)('link')
+              )
+            )
+          )
         )
       );
     }
@@ -22416,7 +22460,7 @@ var AnalyzeContent = (function (_Component) {
 exports['default'] = AnalyzeContent;
 module.exports = exports['default'];
 
-},{"./rows":254,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],257:[function(require,module,exports){
+},{"../i18n/i18n":251,"../main":252,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],258:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22477,7 +22521,7 @@ var IdentificationContent = (function (_Component) {
 exports['default'] = IdentificationContent;
 module.exports = exports['default'];
 
-},{"./rows":254,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],258:[function(require,module,exports){
+},{"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],259:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22538,7 +22582,7 @@ var MeasurementContent = (function (_Component) {
 exports['default'] = MeasurementContent;
 module.exports = exports['default'];
 
-},{"./rows":254,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],259:[function(require,module,exports){
+},{"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22561,6 +22605,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _rows = require('./rows');
 
+var _photoShorter = require('../photoShorter');
+
 var ProtectionContent = (function (_Component) {
   _inherits(ProtectionContent, _Component);
 
@@ -22578,18 +22624,19 @@ var ProtectionContent = (function (_Component) {
       var rows = [];
       for (var i in this._dataKeys) {
         var key = this._dataKeys[i];
+        var value = this.props.data[key];
+        if (key === 'ZnecisteniFoto' && value !== '') {
 
-        if (key === 'ZnecisteniFoto') {
           rows.push(_react2['default'].createElement(_rows.FotoRow, {
             key: i,
             fotoPath: this.props.fotoPath,
-            photoID: this.props.data[key],
+            photoID: (0, _photoShorter.getPhotoID)(value),
             property: key }));
         } else {
           rows.push(_react2['default'].createElement(_rows.TableRow, {
             key: i,
             property: key,
-            val: this.props.data[key] }));
+            val: value }));
         }
       }
 
@@ -22611,7 +22658,7 @@ var ProtectionContent = (function (_Component) {
 exports['default'] = ProtectionContent;
 module.exports = exports['default'];
 
-},{"./rows":254,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
+},{"../photoShorter":253,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],261:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -22660,6 +22707,8 @@ var _tabAbout = require('./tabAbout');
 
 var _tabAbout2 = _interopRequireDefault(_tabAbout);
 
+var _main = require('../main');
+
 var WellInfo = (function (_Component) {
   _inherits(WellInfo, _Component);
 
@@ -22668,7 +22717,8 @@ var WellInfo = (function (_Component) {
 
     _get(Object.getPrototypeOf(WellInfo.prototype), 'constructor', this).call(this, props);
 
-    this.baseFotoPath = 'http://vojta.dubrovsky.eu:4446/test/fotky/';
+    // this.baseFotoPath = 'http://vojta.dubrovsky.eu:4446/test/fotky/';
+    this.baseFotoPath = _main.baseURL + 'fotky/';
 
     this.props = {
       isVisible: false,
@@ -22748,7 +22798,7 @@ var WellInfo = (function (_Component) {
 exports['default'] = WellInfo;
 module.exports = exports['default'];
 
-},{"../Emitter":250,"./navbar":253,"./tabAbout":255,"./tabAnalyze":256,"./tabIdentification":257,"./tabMeasurement":258,"./tabProtection":259,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],261:[function(require,module,exports){
+},{"../Emitter":250,"../main":252,"./navbar":254,"./tabAbout":256,"./tabAnalyze":257,"./tabIdentification":258,"./tabMeasurement":259,"./tabProtection":260,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],262:[function(require,module,exports){
 'use strict';
 
 var _createClass = require('babel-runtime/helpers/create-class')['default'];
@@ -23043,7 +23093,7 @@ var WellFilter = (function () {
 exports['default'] = WellFilter;
 module.exports = exports['default'];
 
-},{"../Emitter":250,"babel-runtime/core-js/array/from":1,"babel-runtime/core-js/object/keys":6,"babel-runtime/core-js/promise":8,"babel-runtime/core-js/set":9,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14,"babel-runtime/helpers/to-consumable-array":15}],262:[function(require,module,exports){
+},{"../Emitter":250,"babel-runtime/core-js/array/from":1,"babel-runtime/core-js/object/keys":6,"babel-runtime/core-js/promise":8,"babel-runtime/core-js/set":9,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14,"babel-runtime/helpers/to-consumable-array":15}],263:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
