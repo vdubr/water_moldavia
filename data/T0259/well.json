@@ -98,12 +98,13 @@
     "DatumVznikuZaznmu": "5/22/14",
     "DatumPosledniUpravy": "5/22/14",
     "OdberovaSkupina": "U001",
-    "Tisk": "Taraclia",
+    "Tisk": "",
     "SouradniceBoduX": 28,
     "SouradniceBoduY": 46,
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 46,
     "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "T0259"
 }

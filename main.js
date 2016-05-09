@@ -22118,6 +22118,8 @@ var NavBar = (function (_Component) {
   }, {
     key: 'render',
     value: function render() {
+      var hasAnalyze = this.props.hasAnalyze;
+
       return _react2['default'].createElement(
         'nav',
         { className: 'navbar navbar-default navbar-fixed-top' },
@@ -22166,7 +22168,7 @@ var NavBar = (function (_Component) {
                   (0, _i18nI18n.msg)('measurement')
                 )
               ),
-              _react2['default'].createElement(
+              hasAnalyze ? _react2['default'].createElement(
                 'li',
                 { role: 'presentation', className: this.props.activeTab === 'fourth' ? 'active' : '', id: 'fourth', onClick: this.onTabClick },
                 _react2['default'].createElement(
@@ -22174,7 +22176,7 @@ var NavBar = (function (_Component) {
                   { href: '#' },
                   (0, _i18nI18n.msg)('analyze')
                 )
-              )
+              ) : null
             ),
             _react2['default'].createElement(
               'ul',
@@ -22774,12 +22776,14 @@ var WellInfo = (function (_Component) {
         var style = {
           display: this.props.isVisible ? 'block' : 'none'
         };
+        var hasAnalyze = this.props.data.rozbory2 !== '';
+
         return _react2['default'].createElement(
           'div',
           {
             className: 'wellInfo',
             style: style },
-          _react2['default'].createElement(_navbar2['default'], { activeTab: this.props.activeTab }),
+          _react2['default'].createElement(_navbar2['default'], { activeTab: this.props.activeTab, hasAnalyze: hasAnalyze }),
           _react2['default'].createElement(
             'div',
             { className: 'wellContent' },

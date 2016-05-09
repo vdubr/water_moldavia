@@ -36,7 +36,7 @@
     "ZrizovatlZdroje": "Primaria",
     "ZrizovatlZdrojeCz": "Obecní úřad",
     "ZrizeniDatum": 1950,
-    "ObsluhaObyvatel": 3000,
+    "ObsluhaObyvatel": 1000,
     "DulezitostProObec": "Sursa cea mai importantă – proba se recoltează totdeauna – serveşte a celor mai mulţi locuitori ai satului",
     "DůlezitostProObecCz": "Nejdůležitější –  vždy se odebírá – slouží pro nejvíce obyvatel obce",
     "Morfologie": "Suprafaţă plană – câmpie",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "Ch0677"
 }

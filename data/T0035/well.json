@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "Ianev Serghei",
     "ZrizeniDatum": 1976,
     "ObsluhaObyvatel": 10,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -71,7 +71,7 @@
     "SilniceVzdalenost": 20,
     "ZdrojZnecisteni": "Un alt mod de contaminare – descriere",
     "ZdrojZnecistenicz": "Jinak znečištěné místo - popsat",
-    "ZdrojZnecisteniPopis": "gradina particulara_x000d_\nin apropierea veceului(10 m)",
+    "ZdrojZnecisteniPopis": "gradină particulară_x000d_\nin apropierea veceului(10 m)",
     "ZdrojZnecisteniPopisCz": "soukromá zahrada                   v blízkosti záchod (10 m)",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 35,
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 1,
+    "rozbory2": "z",
     "zkontrolováno": 9,
     "uuid": "T0035"
 }

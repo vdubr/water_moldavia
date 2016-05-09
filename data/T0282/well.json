@@ -19,7 +19,7 @@
     "SouradniceBoduYvteriny": 11,
     "NadmorskaVyskaBodu": 54,
     "IdFotografieZdroje": "0688",
-    "BlizsiLokalizace": "str.Iubileinaia",
+    "BlizsiLokalizace": "Str. Jubiliară",
     "BlizsiLokalizaceCZ": "ul. Iubileinaia",
     "DodatkovaInformace": "se alimenteaza vecinii de peste drum 4 familii",
     "DodatkovaInformaceCZ": "Studna zásobuje sousedy odnaproti, 4 rodiny.",
@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "místní obyvatelé",
     "ZrizeniDatum": 1988,
     "ObsluhaObyvatel": 10,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 1,
+    "rozbory2": "",
     "zkontrolováno": 9,
     "uuid": "T0282"
 }

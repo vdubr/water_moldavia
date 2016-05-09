@@ -36,7 +36,7 @@
     "ZrizovatlZdroje": "localnici",
     "ZrizovatlZdrojeCz": "místní obyvatelé",
     "ZrizeniDatum": 1970,
-    "ObsluhaObyvatel": 100,
+    "ObsluhaObyvatel": 10,
     "DulezitostProObec": "Una dintre cele importante – proba se recoltează ca a două în cazul când în comună există mai mult",
     "DůlezitostProObecCz": "Jeden z důležitých – odebírá se jako druhý v případě, že v obci je vice než 10 zdrojů a není mimo nejdůležitější odebrán zdroj označený jako rizikový – blíže než 50 m od silnice, nebo u identifikovaného nebo potenciálního zdroje znečištění",
     "Morfologie": "Suprafaţă plană – câmpie",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 46,
     "rozbory": 1,
+    "rozbory2": "",
     "zkontrolováno": 9,
     "uuid": "Ch0358"
 }

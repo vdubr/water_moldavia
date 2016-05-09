@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "Místní obyvatelé",
     "ZrizeniDatum": 1960,
     "ObsluhaObyvatel": 40,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -103,7 +103,8 @@
     "SouradniceBoduY": 45,
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
-    "rozbory": 1,
+    "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "Ch0603"
 }

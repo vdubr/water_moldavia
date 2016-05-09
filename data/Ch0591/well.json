@@ -36,8 +36,8 @@
     "ZrizovatlZdroje": "localnici",
     "ZrizovatlZdrojeCz": "Místní obyvatelé",
     "ZrizeniDatum": 1982,
-    "ObsluhaObyvatel": 100,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "ObsluhaObyvatel": 10,
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 1,
+    "rozbory2": "",
     "zkontrolováno": 9,
     "uuid": "Ch0591"
 }

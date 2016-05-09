@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "",
     "ZrizeniDatum": "",
     "ObsluhaObyvatel": 17,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "La vale",
     "Morfologiecz": "V údolí",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": "",
     "SouradniceZnecisteniY": "",
     "rozbory": 1,
+    "rozbory2": "",
     "zkontrolováno": 9,
     "uuid": "Cn0268"
 }

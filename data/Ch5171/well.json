@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "obyvatelé",
     "ZrizeniDatum": "",
     "ObsluhaObyvatel": 15,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Depresiunea (teren plat)",
     "Morfologiecz": "V depresi (mělké)",
@@ -91,7 +91,7 @@
     "EC": 2,
     "O2MgL": 8,
     "O2procenta": 78,
-    "pH": 6,
+    "pH": 7,
     "EH": 192,
     "cOdberVzorku": "",
     "cOdberVzorkuCz": "",
@@ -103,7 +103,8 @@
     "SouradniceBoduY": 46,
     "SouradniceZnecisteniX": "",
     "SouradniceZnecisteniY": "",
-    "rozbory": 1,
+    "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "Ch5171"
 }

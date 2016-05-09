@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "obyvatelé",
     "ZrizeniDatum": "",
     "ObsluhaObyvatel": 25,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "La vale",
     "Morfologiecz": "V údolí",
@@ -91,7 +91,7 @@
     "EC": 1,
     "O2MgL": 7,
     "O2procenta": 73,
-    "pH": 6,
+    "pH": 7,
     "EH": 214,
     "cOdberVzorku": "Proba de apă de suprafaţă (luată)",
     "cOdberVzorkuCz": "Z volné hladiny - nabrání",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": "",
     "SouradniceZnecisteniY": "",
     "rozbory": 1,
+    "rozbory2": "z",
     "zkontrolováno": 9,
     "uuid": "Ch5134"
 }

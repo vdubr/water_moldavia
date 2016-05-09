@@ -91,7 +91,7 @@
     "EC": 1,
     "O2MgL": 3,
     "O2procenta": 28,
-    "pH": 6,
+    "pH": 7,
     "EH": 229,
     "cOdberVzorku": "Din apă curgătoare – robinet, apa adusă prin conducta izvorului",
     "cOdberVzorkuCz": "Z tekoucí vody – kohoutek vodovodu, výtok potrubím ze zachyceného pramene",
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": "",
     "SouradniceZnecisteniY": "",
     "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "Ch5154"
 }

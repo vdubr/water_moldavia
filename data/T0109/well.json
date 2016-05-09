@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "Samurova Tatiana",
     "ZrizeniDatum": 1973,
     "ObsluhaObyvatel": 20,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -71,7 +71,7 @@
     "SilniceVzdalenost": 7,
     "ZdrojZnecisteni": "Un alt mod de contaminare – descriere",
     "ZdrojZnecistenicz": "Jinak znečištěné místo - popsat",
-    "ZdrojZnecisteniPopis": "gradina particulara",
+    "ZdrojZnecisteniPopis": "gradină particulară",
     "ZdrojZnecisteniPopisCz": "soukromá zahrada",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 34,
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 1,
+    "rozbory2": "",
     "zkontrolováno": 9,
     "uuid": "T0109"
 }

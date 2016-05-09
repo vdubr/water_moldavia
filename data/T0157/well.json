@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "místní obyvatelé",
     "ZrizeniDatum": 1990,
     "ObsluhaObyvatel": 12,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -98,12 +98,13 @@
     "DatumVznikuZaznmu": "5/12/14",
     "DatumPosledniUpravy": "5/12/14",
     "OdberovaSkupina": "U001",
-    "Tisk": "Taraclia",
+    "Tisk": "",
     "SouradniceBoduX": 28,
     "SouradniceBoduY": 45,
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 2,
+    "rozbory2": "z+r",
     "zkontrolováno": 9,
     "uuid": "T0157"
 }

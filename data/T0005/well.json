@@ -37,7 +37,7 @@
     "ZrizovatlZdrojeCz": "místní obyvatelé",
     "ZrizeniDatum": 1990,
     "ObsluhaObyvatel": 20,
-    "DulezitostProObec": "Imporanţă mică – faţă de sursele celelalte",
+    "DulezitostProObec": "Importanță mică – faţă de sursele celelalte",
     "DůlezitostProObecCz": "Malý význam - vzhledem k ostatním zdrojům",
     "Morfologie": "Suprafaţă plană – câmpie",
     "Morfologiecz": "Ploché území - rovina",
@@ -71,7 +71,7 @@
     "SilniceVzdalenost": 7,
     "ZdrojZnecisteni": "Un alt mod de contaminare – descriere",
     "ZdrojZnecistenicz": "Jinak znečištěné místo - popsat",
-    "ZdrojZnecisteniPopis": "soseaua_x000d_\ngradina particulara",
+    "ZdrojZnecisteniPopis": "soseaua_x000d_\ngradină particulară",
     "ZdrojZnecisteniPopisCz": "silnice a \nsoukromá zahrada",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 34,
@@ -104,6 +104,7 @@
     "SouradniceZnecisteniX": 28,
     "SouradniceZnecisteniY": 45,
     "rozbory": 1,
+    "rozbory2": "z",
     "zkontrolováno": 9,
     "uuid": "T0005"
 }
