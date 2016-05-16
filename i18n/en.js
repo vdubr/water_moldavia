@@ -1,4 +1,6 @@
 i18n = {
+  yes: 'Yes',
+  no: 'No',
   close: 'Close',
   profile: 'Profile',
   photo: 'Photo',

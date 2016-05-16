@@ -22546,6 +22546,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _rows = require('./rows');
 
+var _i18nI18n = require('../i18n/i18n');
+
 var MeasurementContent = (function (_Component) {
   _inherits(MeasurementContent, _Component);
 
@@ -22563,7 +22565,14 @@ var MeasurementContent = (function (_Component) {
       var rows = [];
       for (var i in this._dataKeys) {
         var key = this._dataKeys[i];
-        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: this.props.data[key] }));
+        var value = this.props.data[key];
+        if (value === 'FALSE') {
+          value = (0, _i18nI18n.msg)('no');
+        } else if (value === 'TRUE') {
+          value = (0, _i18nI18n.msg)('yes');
+        }
+
+        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: value }));
       }
 
       return _react2['default'].createElement(
@@ -22584,7 +22593,7 @@ var MeasurementContent = (function (_Component) {
 exports['default'] = MeasurementContent;
 module.exports = exports['default'];
 
-},{"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
+},{"../i18n/i18n":251,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
