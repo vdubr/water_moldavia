@@ -22022,7 +22022,8 @@ var _Application = require('./Application');
 
 var _Application2 = _interopRequireDefault(_Application);
 
-var baseURL = 'http://94.112.84.203:4446/test/';
+// export const baseURL = 'http://94.112.84.203:4446/test/';
+var baseURL = 'https://dubrovsky.eu:4446/test/';
 
 exports.baseURL = baseURL;
 var initialData = {
