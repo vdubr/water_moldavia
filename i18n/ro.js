@@ -1,14 +1,14 @@
 i18n = {
   yes: 'Da',
   no: 'Nu',
-  close: 'inchide',
+  close: 'închide',
   profile: 'Profil',
   photo: 'foto',
   importance: 'Importanța',
-  village: 'Sat',
+  village: 'Localitate',
   character: 'Caracter',
   clear: 'Caută',
-  villageFilterPlaceholder: 'Introduceti denumirea satului',
+  villageFilterPlaceholder: 'Introduceti denumirea localității',
   null: 'nul',
   allItems: 'Toate obiectele',
   extremely: 'Extrem',
@@ -27,7 +27,7 @@ i18n = {
   //Identification tab
   identification: 'Identificare',
   BodRegion: 'Regiune',
-  Obec: 'Sat',
+  Obec: 'Localitate',
   BodRegionCislo: 'Numărul regiunii',
   CharakterZdrojeVody: 'Tipul sursei de apă',
   VydatnosZdroje: 'Randamentul sursei de apă',
@@ -43,7 +43,7 @@ i18n = {
   SouradniceBoduYstupne: 'Coordonate GPS Y grade',
   SouradniceBoduYminuty: 'Coordonate GPS Y minute',
   SouradniceBoduYvteriny: 'Coordonate GPS Y secunde',
-  DulezitostProObec: 'Importanța pentru sat',
+  DulezitostProObec: 'Importanța pentru localitate',
   DodatkovaInformace: 'Informație adițională',
 
   //Protection tab
