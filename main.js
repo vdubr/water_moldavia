@@ -22128,7 +22128,18 @@ var NavBar = (function (_Component) {
           { className: 'container-fluid' },
           _react2['default'].createElement(
             'div',
-            { className: 'navbar-collapse collapse' },
+            { className: 'navbar-header', 'data-toggle': 'collapse' },
+            _react2['default'].createElement(
+              'button',
+              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+              _react2['default'].createElement('span', { className: 'icon-bar' }),
+              _react2['default'].createElement('span', { className: 'icon-bar' }),
+              _react2['default'].createElement('span', { className: 'icon-bar' })
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'navbar-collapse collapse', id: 'myNavbar' },
             _react2['default'].createElement(
               'ul',
               { className: "nav navbar-nav" },
@@ -23159,19 +23170,23 @@ var VillageInput = (function (_Component) {
       var value = this.props.value;
       return _react2['default'].createElement(
         'div',
-        { className: 'form-group' },
+        null,
         _react2['default'].createElement(
-          'label',
-          { htmlFor: 'village' },
-          (0, _i18nI18n.msg)('village')
-        ),
-        _react2['default'].createElement('input', {
-          type: 'text',
-          className: 'form-control',
-          id: 'village',
-          placeholder: (0, _i18nI18n.msg)('villageFilterPlaceholder'),
-          value: value,
-          onChange: this.handleChange })
+          'div',
+          { className: 'form-group' },
+          _react2['default'].createElement(
+            'label',
+            { htmlFor: 'village' },
+            (0, _i18nI18n.msg)('village')
+          ),
+          _react2['default'].createElement('input', {
+            type: 'text',
+            className: 'form-control',
+            id: 'village',
+            placeholder: (0, _i18nI18n.msg)('villageFilterPlaceholder'),
+            value: value,
+            onChange: this.handleChange })
+        )
       );
     }
   }]);
@@ -23330,7 +23345,8 @@ var WellFilterView = (function (_Component4) {
     this._defaultState = {
       village: '',
       importance: '0',
-      character: '0'
+      character: '0',
+      isOpen: true
     };
 
     var state = _Object$assign({}, this._defaultState);
@@ -23342,6 +23358,7 @@ var WellFilterView = (function (_Component4) {
     };
 
     this._clickClearHandler = this._clickClearHandler.bind(this);
+    this._clickCloseHandler = this._clickCloseHandler.bind(this);
     this._onChangeFilter = this._onChangeFilter.bind(this);
 
     _Emitter2['default'].on('filterValueChanged', this._onChangeFilter);
@@ -23360,6 +23377,13 @@ var WellFilterView = (function (_Component4) {
       evt.preventDefault();
     }
   }, {
+    key: '_clickCloseHandler',
+    value: function _clickCloseHandler(evt) {
+      this.state.isOpen = !this.state.isOpen;
+      this.setState(this.state);
+      evt.preventDefault();
+    }
+  }, {
     key: '_dispatchFilterChange',
     value: function _dispatchFilterChange() {
       _Emitter2['default'].emit('filterChanged', this.state);
@@ -23375,50 +23399,59 @@ var WellFilterView = (function (_Component4) {
     key: 'render',
     value: function render() {
       var wellCount = this.props.searchedWells ? this.props.searchedWells : '';
+      var isOpen = this.state.isOpen;
       var countSpace = wellCount === '' ? '' : ' ';
       return _react2['default'].createElement(
         'div',
-        { className: 'filterForm' },
-        _react2['default'].createElement(
-          'form',
+        { className: 'filterForm ' + (isOpen ? 'closer-open' : 'closer-close') },
+        _react2['default'].createElement('button', {
+          className: 'btn btn-map btn-closer ' + (isOpen ? 'closer-open' : 'closer-close'),
+          type: 'button',
+          onClick: this._clickCloseHandler }),
+        isOpen ? _react2['default'].createElement(
+          'div',
           null,
-          _react2['default'].createElement(VillageInput, { value: this.state.village }),
-          _react2['default'].createElement(ImportanceFilter, { value: this.state.importance }),
-          _react2['default'].createElement(CharacterFilter, { value: this.state.character }),
           _react2['default'].createElement(
-            'button',
-            {
-              disabled: wellCount === '' ? true : false,
-              type: 'submit',
-              className: 'btn btn-danger clearButton',
-              onClick: this._clickClearHandler },
-            '' + (0, _i18nI18n.msg)('clear') + countSpace,
-            wellCount === '' ? null : _react2['default'].createElement(
-              'span',
-              { className: 'badge' },
-              wellCount,
-              ' '
+            'form',
+            null,
+            _react2['default'].createElement(VillageInput, { value: this.state.village }),
+            _react2['default'].createElement(ImportanceFilter, { value: this.state.importance }),
+            _react2['default'].createElement(CharacterFilter, { value: this.state.character }),
+            _react2['default'].createElement(
+              'button',
+              {
+                disabled: wellCount === '' ? true : false,
+                type: 'submit',
+                className: 'btn btn-danger clearButton',
+                onClick: this._clickClearHandler },
+              '' + (0, _i18nI18n.msg)('clear') + countSpace,
+              wellCount === '' ? null : _react2['default'].createElement(
+                'span',
+                { className: 'badge' },
+                wellCount,
+                ' '
+              )
             )
+          ),
+          _react2['default'].createElement(
+            'a',
+            {
+              className: 'logo-watersources',
+              href: 'http://www.vodnizdroje.cz/',
+              target: '_blank'
+            },
+            _react2['default'].createElement('img', { src: './css/img/logo_vodni_zdroje.png' })
+          ),
+          _react2['default'].createElement(
+            'a',
+            {
+              href: 'http://www.czda.cz/',
+              target: '_blank',
+              className: 'logo-cra'
+            },
+            _react2['default'].createElement('img', { src: './css/img/logo_cra.png' })
           )
-        ),
-        _react2['default'].createElement(
-          'a',
-          {
-            className: 'logo-watersources',
-            href: 'http://www.vodnizdroje.cz/',
-            target: '_blank'
-          },
-          _react2['default'].createElement('img', { src: './css/img/logo_vodni_zdroje.png' })
-        ),
-        _react2['default'].createElement(
-          'a',
-          {
-            href: 'http://www.czda.cz/',
-            target: '_blank',
-            className: 'logo-cra'
-          },
-          _react2['default'].createElement('img', { src: './css/img/logo_cra.png' })
-        )
+        ) : null
       );
     }
   }]);

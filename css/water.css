@@ -68,6 +68,16 @@ div .wellContent{
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+.filterForm.closer-open{
+  width: 300px;
+  padding: 20px;
+}
+
+.filterForm.closer-close{
+  width: 0px;
+  padding: 0px;
+}
+
 .filterForm form {
   margin-bottom: 0;
 }
@@ -97,6 +107,7 @@ div .wellContent{
 
 .ol-control button:focus, .ol-control button:hover {
   background-color: #c9302c;
+  outline: none;
 }
 
 /**
@@ -299,4 +310,40 @@ div .wellContent{
 	-moz-transform:scale(.3);
 		background-color:rgb(255,255,255);
 	}
+}
+
+.btn-closer {
+  width: 25px;
+  padding: 0;
+  height: 40px;
+  left: -25px;
+  position: absolute;
+  top: 75%;
+  background: #d9534f;
+  border: 0;
+  border-radius: .5px 0 0 .5px;
+  box-shadow: 0 0 5px #bfbfbf;
+}
+
+.btn-closer.closer-close:before{
+  content: '<'
+}
+.btn-closer.closer-open:before{
+  content: '>'
+}
+
+.btn-closer:before{
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  color: #FFF;
+  margin: auto;
+  font-size: 1.5em;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.btn-closer:focus, .btn-closer:hover {
+    text-decoration: none;
+    outline: none;
 }
