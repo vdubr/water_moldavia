@@ -22130,6 +22130,15 @@ var NavBar = (function (_Component) {
             'div',
             { className: 'navbar-header', 'data-toggle': 'collapse' },
             _react2['default'].createElement(
+              'div',
+              { className: 'navbar-header-minimalist visible-xs', id: '#myNavbar' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                getNameByTabID(this.props.activeTab)
+              )
+            ),
+            _react2['default'].createElement(
               'button',
               { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
               _react2['default'].createElement('span', { className: 'icon-bar' }),
@@ -22148,8 +22157,8 @@ var NavBar = (function (_Component) {
                 { role: 'presentation', className: this.props.activeTab === 'fifth' ? 'active' : '', id: 'fifth', onClick: this.onTabClick },
                 _react2['default'].createElement(
                   'a',
-                  { href: '#' },
-                  (0, _i18nI18n.msg)('about')
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('fifth')
                 )
               ),
               _react2['default'].createElement(
@@ -22157,8 +22166,8 @@ var NavBar = (function (_Component) {
                 { role: 'presentation', className: this.props.activeTab === 'first' ? 'active' : '', id: 'first', onClick: this.onTabClick },
                 _react2['default'].createElement(
                   'a',
-                  { href: '#' },
-                  (0, _i18nI18n.msg)('identification')
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('first')
                 )
               ),
               _react2['default'].createElement(
@@ -22166,8 +22175,8 @@ var NavBar = (function (_Component) {
                 { role: 'presentation', className: this.props.activeTab === 'second' ? 'active' : '', id: 'second', onClick: this.onTabClick },
                 _react2['default'].createElement(
                   'a',
-                  { href: '#' },
-                  (0, _i18nI18n.msg)('protection')
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('second')
                 )
               ),
               _react2['default'].createElement(
@@ -22175,8 +22184,8 @@ var NavBar = (function (_Component) {
                 { role: 'presentation', className: this.props.activeTab === 'thirth' ? 'active' : '', id: 'thirth', onClick: this.onTabClick },
                 _react2['default'].createElement(
                   'a',
-                  { href: '#' },
-                  (0, _i18nI18n.msg)('measurement')
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('thirth')
                 )
               ),
               hasAnalyze ? _react2['default'].createElement(
@@ -22184,8 +22193,8 @@ var NavBar = (function (_Component) {
                 { role: 'presentation', className: this.props.activeTab === 'fourth' ? 'active' : '', id: 'fourth', onClick: this.onTabClick },
                 _react2['default'].createElement(
                   'a',
-                  { href: '#' },
-                  (0, _i18nI18n.msg)('analyze')
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('fourth')
                 )
               ) : null
             ),
@@ -22197,7 +22206,7 @@ var NavBar = (function (_Component) {
                 null,
                 _react2['default'].createElement(
                   'a',
-                  { href: '#', onClick: this._onCloseBtnClick },
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar', onClick: this._onCloseBtnClick },
                   _react2['default'].createElement(
                     'span',
                     null,
@@ -22218,6 +22227,28 @@ var NavBar = (function (_Component) {
 })(_react.Component);
 
 exports['default'] = NavBar;
+
+var getNameByTabID = function getNameByTabID(tabID) {
+  var title = '';
+  switch (tabID) {
+    case 'first':
+      title = (0, _i18nI18n.msg)('identification');
+      break;
+    case 'second':
+      title = (0, _i18nI18n.msg)('protection');
+      break;
+    case 'thirth':
+      title = (0, _i18nI18n.msg)('measurement');
+      break;
+    case 'fourth':
+      title = (0, _i18nI18n.msg)('analyze');
+      break;
+    case 'fifth':
+      title = (0, _i18nI18n.msg)('about');
+      break;
+  }
+  return title;
+};
 module.exports = exports['default'];
 
 },{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],255:[function(require,module,exports){
@@ -22303,7 +22334,7 @@ var FotoRow = (function (_Component2) {
         _react2['default'].createElement(
           'td',
           { colSpan: '2', style: { textAlign: 'center' } },
-          _react2['default'].createElement('img', { style: { height: '300px' }, src: fotoUrl })
+          _react2['default'].createElement('img', { className: 'img-responsive', src: fotoUrl })
         )
       );
     }

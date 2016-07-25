@@ -63,15 +63,16 @@ div .wellContent{
   top: 0px;
   bottom: 0px;
   right: 0px;
-  width: 300px;
+  width: 80%;
+  max-width: 300px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-.filterForm.closer-open{
+/*.filterForm.closer-open{
   width: 300px;
   padding: 20px;
-}
+}*/
 
 .filterForm.closer-close{
   width: 0px;
@@ -346,4 +347,11 @@ div .wellContent{
 .btn-closer:focus, .btn-closer:hover {
     text-decoration: none;
     outline: none;
+}
+
+.navbar-header-minimalist{
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  width: 100%;
 }
