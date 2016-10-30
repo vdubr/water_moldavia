@@ -34,7 +34,7 @@
     "VydatnostPokles": "FALSE",
     "HladinaPodzemVody": "FALSE",
     "ZrizovatlZdroje": "localnici",
-    "ZrizovatlZdrojeCz": "",
+    "ZrizovatlZdrojeCz": "místní obyvatelé",
     "ZrizeniDatum": 1965,
     "ObsluhaObyvatel": 30,
     "DulezitostProObec": "Una dintre cele importante – proba se recoltează ca a două în cazul când în comună există mai mult",
@@ -72,7 +72,7 @@
     "ZdrojZnecisteni": "Un alt mod de contaminare – descriere",
     "ZdrojZnecistenicz": "Jinak znečištěné místo - popsat",
     "ZdrojZnecisteniPopis": "drum de tara",
-    "ZdrojZnecisteniPopisCz": "",
+    "ZdrojZnecisteniPopisCz": "venkovská cesta",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 18,
     "SouradniceZnecisteniXvteriny": 4,
@@ -106,5 +106,6 @@
     "rozbory": 2,
     "rozbory2": "z+r",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch0867"
 }

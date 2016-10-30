@@ -80,7 +80,7 @@
     "SouradniceZnecisteniYminuty": 26,
     "SouradniceZnecisteniYvteriny": 53,
     "NamorskaVyskaZnecisteniX": 171,
-    "ZnecisteniFoto": 1134401,
+    "ZnecisteniFoto": "113-4401",
     "OrganleptickeZnecisteni": "",
     "OrganoleptickeZnecistenicz": "",
     "Zakal": "Nimic",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1150"
 }

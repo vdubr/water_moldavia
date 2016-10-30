@@ -89,7 +89,7 @@
     "DobraVodaMistniInformace": "FALSE",
     "Teplota": 13,
     "EC": 3,
-    "O2MgL": 15,
+    "O2MgL": 5,
     "O2procenta": 56,
     "pH": 7,
     "EH": 206,
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0374"
 }

@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 31,
     "SouradniceBoduYvteriny": 29,
     "NadmorskaVyskaBodu": 67,
-    "IdFotografieZdroje": "115-6060",
+    "IdFotografieZdroje": "115-5050",
     "BlizsiLokalizace": "Fintina este sapata pe str. M.Viteazu 92.",
     "BlizsiLokalizaceCZ": "Studna se nachází v ulici m. Viteazul 92.",
     "DodatkovaInformace": "Fintina este construita din piatra, coroana este din lemn, lantul este ruginit, are capac de protectie insa nu este folosit.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1536"
 }

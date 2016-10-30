@@ -91,7 +91,7 @@
     "EC": 1,
     "O2MgL": 5,
     "O2procenta": 51,
-    "pH": 3,
+    "pH": "",
     "EH": 137,
     "cOdberVzorku": "Din cişmea cu pompă",
     "cOdberVzorkuCz": "Z ruční pumpy",
@@ -106,5 +106,6 @@
     "rozbory": 2,
     "rozbory2": "z+r",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch5237"
 }

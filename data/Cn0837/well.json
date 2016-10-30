@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 19,
     "SouradniceBoduYvteriny": 50,
     "NadmorskaVyskaBodu": 151,
-    "IdFotografieZdroje": "105-1201",
+    "IdFotografieZdroje": "105-1202",
     "BlizsiLokalizace": "Fantina este localizata la marginea drumului local, in apropierea caselor de locuit.",
     "BlizsiLokalizaceCZ": "Studna se nachází na kraji místní cesty, v blízkosti obytných domů.",
     "DodatkovaInformace": "Fantana este construita din beton, coroana si capacul de protectie sun din metal, are acoperis.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0837"
 }

@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 29,
     "SouradniceBoduYvteriny": 6,
     "NadmorskaVyskaBodu": 159,
-    "IdFotografieZdroje": "118-6177",
+    "IdFotografieZdroje": "129-7537",
     "BlizsiLokalizace": "Fintina este localizata in apropierea caselor si drumului local si langa scoala.",
     "BlizsiLokalizaceCZ": "Studna se nachází v blízkosti domů a místní cesty a vedle školy.",
     "DodatkovaInformace": "Fantana este construita din beton, capacul de protectie este din lemn, are acoperis.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1654"
 }

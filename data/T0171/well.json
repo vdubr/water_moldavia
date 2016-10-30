@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 46,
     "SouradniceBoduYvteriny": 45,
     "NadmorskaVyskaBodu": 0,
-    "IdFotografieZdroje": "0411",
+    "IdFotografieZdroje": "0410",
     "BlizsiLokalizace": "str.Matrosova 43",
     "BlizsiLokalizaceCZ": "ul. Matrosova 43",
     "DodatkovaInformace": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "T0171"
 }

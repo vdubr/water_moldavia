@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 38,
     "SouradniceBoduYvteriny": 3,
     "NadmorskaVyskaBodu": 100,
-    "IdFotografieZdroje": 4357,
+    "IdFotografieZdroje": 4358,
     "BlizsiLokalizace": "pe teritoriul satului",
     "BlizsiLokalizaceCZ": "na území vesnice",
     "DodatkovaInformace": "raspunzator primaria",
@@ -80,7 +80,7 @@
     "SouradniceZnecisteniYminuty": 38,
     "SouradniceZnecisteniYvteriny": 1,
     "NamorskaVyskaZnecisteniX": 100,
-    "ZnecisteniFoto": 4358,
+    "ZnecisteniFoto": 4359,
     "OrganleptickeZnecisteni": "",
     "OrganoleptickeZnecistenicz": "",
     "Zakal": "Nimic",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Lv0170"
 }

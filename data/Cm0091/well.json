@@ -23,8 +23,8 @@
     "BlizsiLokalizaceCZ": "Vrt se nachází nad obcí, v blízkosti zemědělských pozemků.",
     "DodatkovaInformace": "De la aceasta fintina se alimenteaza circa 200 case._x000d_\nNu are gard de protectie, adincimea este de circa 230m, pompa este instalata la 200m.",
     "DodatkovaInformaceCZ": "Tento zdroj využívá cca 200 domů. Nemá ochranný plot, hloubka je cca 230 m, čerpadlo instalováno ve 200 m.",
-    "CharakterZdrojeVody": "Fântâna săpată",
-    "CharakterZdrojeVodyCz": "Kopaná studna",
+    "CharakterZdrojeVody": "Foraj",
+    "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": "",
     "HloubkaHladinyMerena": "",
     "HloubkaStudnyLocalInfo": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0091"
 }

@@ -20,11 +20,11 @@
     "NadmorskaVyskaBodu": 226,
     "IdFotografieZdroje": "114-4785",
     "BlizsiLokalizace": "Fantana arteziana este localizata la marginea satului, in camp.",
-    "BlizsiLokalizaceCZ": "Artéská studna se nachází na okraji obce, v poli.",
+    "BlizsiLokalizaceCZ": "Vrt se nachází na okraji obce, v poli.",
     "DodatkovaInformace": "Fantana arteziana este compusa din 2 foraje separate care pompeaza in acelasi rezervor.",
-    "DodatkovaInformaceCZ": "Tato artéská studna se skládá ze dvou vrtů, které čerpají vodu do stejného rezervoáru.",
-    "CharakterZdrojeVody": "Fântâna săpată",
-    "CharakterZdrojeVodyCz": "Kopaná studna",
+    "DodatkovaInformaceCZ": "Tento vrt se skládá ze dvou vrtů, které čerpají vodu do stejného rezervoáru.",
+    "CharakterZdrojeVody": "Foraj",
+    "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": "",
     "HloubkaHladinyMerena": 215,
     "HloubkaStudnyLocalInfo": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1354"
 }

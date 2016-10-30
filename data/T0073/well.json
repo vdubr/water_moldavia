@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 54,
     "SouradniceBoduYvteriny": 1,
     "NadmorskaVyskaBodu": 17,
-    "IdFotografieZdroje": 1180,
+    "IdFotografieZdroje": "0180",
     "BlizsiLokalizace": "str.Terscova 19",
     "BlizsiLokalizaceCZ": "ul. Terscova 19",
     "DodatkovaInformace": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "T0073"
 }

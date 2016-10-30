@@ -72,7 +72,7 @@
     "ZdrojZnecisteni": "",
     "ZdrojZnecistenicz": "",
     "ZdrojZnecisteniPopis": "La distanta de 150m in amonte de fintina este amplasat cimitirul din localitatea data.",
-    "ZdrojZnecisteniPopisCz": "",
+    "ZdrojZnecisteniPopisCz": "Ve vzdálenosti 150 m nad studnou  se nachází místní hřbitov",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 15,
     "SouradniceZnecisteniXvteriny": 27,
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0596"
 }

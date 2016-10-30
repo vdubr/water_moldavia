@@ -72,7 +72,7 @@
     "ZdrojZnecisteni": "Băligar (îngrăşământ) uzual",
     "ZdrojZnecistenicz": "Běžné hnojiště",
     "ZdrojZnecisteniPopis": "In spatele fintinii sunt crescute pasari domestice, dejectiile animaliere nimeresc in fintina in urma ploilor, prin infiltrarea apei in sol.",
-    "ZdrojZnecisteniPopisCz": "",
+    "ZdrojZnecisteniPopisCz": "Za studnou je pěstována drůbež, ptačince následně pronikají do studny při deštích půdou.",
     "SouradniceZnecisteniXstupne": 28,
     "SouradniceZnecisteniXminuty": 12,
     "SouradniceZnecisteniXvteriny": 59,
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0563"
 }

@@ -20,7 +20,7 @@
     "NadmorskaVyskaBodu": 154,
     "IdFotografieZdroje": "106-2027",
     "BlizsiLokalizace": "Sursa de apa este amplasata la marginea drumului central din localitate, in apropiere de periferia satului.",
-    "BlizsiLokalizaceCZ": "",
+    "BlizsiLokalizaceCZ": "Tento zdroj vody se nachází na kraji hlavní cesty, v blízkosti okraje obce.",
     "DodatkovaInformace": "Fintina este ingradita, are acoperis de protectie, nu are capaclantul si scripetele este ruginit, galeata a fost schimbata recent._x000d_\nSursa due apa se afla la un nivel mai inferior fata de drumul central din localitate.",
     "DodatkovaInformaceCZ": "Studna je oplocená, má ochrannou stříšku, nemá víko, řetěz a kladka jsou zrezavělé, vědro bylo nedávno vyměněné. Tento zdroj se nachází níže oproti místní centrální cestě.",
     "CharakterZdrojeVody": "Fântâna săpată",
@@ -105,6 +105,7 @@
     "SouradniceZnecisteniY": "",
     "rozbory": 1,
     "rozbory2": "",
-    "zkontrolováno": 1,
+    "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn1049"
 }

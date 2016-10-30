@@ -20,9 +20,9 @@
     "NadmorskaVyskaBodu": "",
     "IdFotografieZdroje": "112-4046",
     "BlizsiLokalizace": "Fantana se afla la marginea drumului, langa casele de locuit.",
-    "BlizsiLokalizaceCZ": "",
+    "BlizsiLokalizaceCZ": "Studna se nachází na kraji cesty, vedle obytných domů.",
     "DodatkovaInformace": "Fantana este construita din beton, are acoperis si gard de protectie.",
-    "DodatkovaInformaceCZ": "",
+    "DodatkovaInformaceCZ": "Studna je postavena z betonu, má stříšku a ochranný plot.",
     "CharakterZdrojeVody": "Fântâna săpată",
     "CharakterZdrojeVodyCz": "Kopaná studna",
     "HloubkaHladinyLocalInfo": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch5248"
 }

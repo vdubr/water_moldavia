@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 21,
     "SouradniceBoduYvteriny": 14,
     "NadmorskaVyskaBodu": 199,
-    "IdFotografieZdroje": "104-0141",
+    "IdFotografieZdroje": "104-1039",
     "BlizsiLokalizace": "Fintina este localizata la marginea drumului local, in apropiere este depozitat nisip si piatra pentru constructie._x000d_\nSursa de apa este amplasata linga casele de locuit. In preajma fintinii este o casa in proces de constructie.",
     "BlizsiLokalizaceCZ": "Studna je na kraji místní cesty, v blízkosti je uskladněn písek a stavební kámen. Vedle jsou obytné domy a jeden rozestavěný dům.",
     "DodatkovaInformace": "Fintina este construita din piatra, coroana fintinii este din metal ce prezinta rugina prin interior si pe exterior.\nFintina este intr-o stare nesatisfacatoare. Lantul este ruginit, scripetele este din lemn, are capac de protectie, nu are acoperis si gard.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0717"
 }

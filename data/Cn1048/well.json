@@ -20,7 +20,7 @@
     "NadmorskaVyskaBodu": 154,
     "IdFotografieZdroje": "106-2023",
     "BlizsiLokalizace": "Fintina este amplasata la marginea drumului central, linga casele de locuit._x000d_\nIn apriopiere de fintina este localizata alimentara din localitate._x000d_\nFintina se afla in apropiere de casa cu numarul 69",
-    "BlizsiLokalizaceCZ": "",
+    "BlizsiLokalizaceCZ": "Studna se nachází na kraji hlavní cesty, vedle obytných domů. V blízkosti studny je místní obchod s potravinami. Studna je v blízkosti domu č. 69.",
     "DodatkovaInformace": "Coroana fintinii este in stare avariata, are acoperis, este partial ingradita cu gard de beton, lantul este ruginit, la fel si scripetele prezinta rugina.",
     "DodatkovaInformaceCZ": "Okruží studny je poškozené, studna má stříšku, je částečně ohrazena betonovým plotem, řetěz a kladka jsou zrezavělé.",
     "CharakterZdrojeVody": "Fântâna săpată",
@@ -105,6 +105,7 @@
     "SouradniceZnecisteniY": "",
     "rozbory": 1,
     "rozbory2": "",
-    "zkontrolováno": 1,
+    "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn1048"
 }

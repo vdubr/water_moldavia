@@ -4,7 +4,7 @@
     "BodRegionCislo": "0690",
     "SampleId": "Cm0690",
     "NazevRegion": "Cimişlia",
-    "Obec": "Gura Galbenei",
+    "Obec": "Fetiţa",
     "KatastralniCislo": "",
     "ZastupceSamospravy": "Primar Bicos Nicolae",
     "CisloSANEPID": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0690"
 }

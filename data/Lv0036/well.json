@@ -80,7 +80,7 @@
     "SouradniceZnecisteniYminuty": 35,
     "SouradniceZnecisteniYvteriny": 2,
     "NamorskaVyskaZnecisteniX": 69,
-    "ZnecisteniFoto": 4071,
+    "ZnecisteniFoto": 4072,
     "OrganleptickeZnecisteni": "",
     "OrganoleptickeZnecistenicz": "",
     "Zakal": "Nimic",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Lv0036"
 }

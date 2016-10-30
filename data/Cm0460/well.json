@@ -28,7 +28,7 @@
     "HloubkaHladinyLocalInfo": "",
     "HloubkaHladinyMerena": 25,
     "HloubkaStudnyLocalInfo": "",
-    "HloubkaStudnyMerena": 2694,
+    "HloubkaStudnyMerena": 26,
     "PrumerStudny": 1000,
     "VydatnosZdroje": "",
     "VydatnostPokles": "FALSE",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0460"
 }

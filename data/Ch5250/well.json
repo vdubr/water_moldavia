@@ -20,9 +20,9 @@
     "NadmorskaVyskaBodu": 21,
     "IdFotografieZdroje": "117-5868",
     "BlizsiLokalizace": "Fantana arteziana se afla la marginea satului, in curtea unui localnic.",
-    "BlizsiLokalizaceCZ": "",
+    "BlizsiLokalizaceCZ": "Vrt se nachází na kraji vesnice, na dvoře jednomo místního obyvatele.",
     "DodatkovaInformace": "Fantana arteziana este privata, dar de la aceasta sursa se alimenteaza si localnicii din apropiere.",
-    "DodatkovaInformaceCZ": "",
+    "DodatkovaInformaceCZ": "Vrt je soukromý, zásobuje i místní obyvatele z blízkého okolí.",
     "CharakterZdrojeVody": "Foraj",
     "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": "",
@@ -105,6 +105,7 @@
     "SouradniceZnecisteniY": "",
     "rozbory": 1,
     "rozbory2": "z",
-    "zkontrolováno": 1,
+    "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch5250"
 }

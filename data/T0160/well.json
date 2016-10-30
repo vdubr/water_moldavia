@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 44,
     "SouradniceBoduYvteriny": 11,
     "NadmorskaVyskaBodu": 0,
-    "IdFotografieZdroje": "0382",
+    "IdFotografieZdroje": "0381",
     "BlizsiLokalizace": "str.Ismail 55",
     "BlizsiLokalizaceCZ": "ul. Ismail 55",
     "DodatkovaInformace": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "T0160"
 }

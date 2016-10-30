@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 46,
     "SouradniceBoduYvteriny": 41,
     "NadmorskaVyskaBodu": 18,
-    "IdFotografieZdroje": "0473",
+    "IdFotografieZdroje": "0472",
     "BlizsiLokalizace": "str.Gagarina 72",
     "BlizsiLokalizaceCZ": "ul. Gagarina 72",
     "DodatkovaInformace": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "T0198"
 }

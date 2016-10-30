@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 36,
     "SouradniceBoduYvteriny": 48,
     "NadmorskaVyskaBodu": 89,
-    "IdFotografieZdroje": "110-3204",
+    "IdFotografieZdroje": "110-3208",
     "BlizsiLokalizace": "Fantana este situata la marginea drumului, langa casele de locuit.",
     "BlizsiLokalizaceCZ": "Studna se nachází na kraji cesty, vedle obytných domů.",
     "DodatkovaInformace": "Fantana este construita din piatra, are acoperis, nu are capac de protectie.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0274"
 }

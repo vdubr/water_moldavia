@@ -54,7 +54,7 @@
     "GeologieLitologie": "Conglomerate, pietriş",
     "GeologieOblastSymbol": "Zona 3",
     "GeologieOblast": "Răspândirea calcarelor sarmaţiene.",
-    "GeologieOblastCz": "Hranice rozšíření sarmatských vápenců.",
+    "GeologieOblastCz": "Răspândirea calcarelor sarmaţiene.",
     "HydrogeologieSymbol": "N2pn",
     "HydrogeologieKolektor": "Strat acvifer în depozitele pontice. Calcare, nisipuri aleurite.",
     "HydrogeologieKolektorCz": "Zvodněný horizont v uloženinách pontského stupně. Vápence, písky, aleurity.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch5241"
 }

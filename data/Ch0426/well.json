@@ -23,8 +23,8 @@
     "BlizsiLokalizaceCZ": "horní část vesnice",
     "DodatkovaInformace": "este ingradita conform proiectului_x000d_\nsonda nr.1980",
     "DodatkovaInformaceCZ": "je oplocená podle projektu\nsonda (vrt) č.1980",
-    "CharakterZdrojeVody": "Fântâna săpată",
-    "CharakterZdrojeVodyCz": "Kopaná studna",
+    "CharakterZdrojeVody": "Foraj",
+    "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": 150,
     "HloubkaHladinyMerena": 150,
     "HloubkaStudnyLocalInfo": 170,
@@ -106,5 +106,6 @@
     "rozbory": 2,
     "rozbory2": "z+r",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch0426"
 }

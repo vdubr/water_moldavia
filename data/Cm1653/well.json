@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 29,
     "SouradniceBoduYvteriny": 23,
     "NadmorskaVyskaBodu": 121,
-    "IdFotografieZdroje": "118-6116",
+    "IdFotografieZdroje": "129-7500",
     "BlizsiLokalizace": "Statia se afla la periferia localitatii , in apropierea statiei de epurare a apei si in apropierea unei ferme locale.",
     "BlizsiLokalizaceCZ": "Nachází se na okraji obce, v blízkosti čističky odpadních vod a v blízkosti jednoho místního statku (farmy).",
     "DodatkovaInformace": "Fintina este construite din inele de beton, nu are capac, gard si acoperis de protectie. In fintina este instalata o pompa.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1653"
 }

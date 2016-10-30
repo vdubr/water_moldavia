@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 53,
     "SouradniceBoduYvteriny": 43,
     "NadmorskaVyskaBodu": 12,
-    "IdFotografieZdroje": "0242",
+    "IdFotografieZdroje": "0244",
     "BlizsiLokalizace": "str.Gagarina 12",
     "BlizsiLokalizaceCZ": "ul. Gagarina 12",
     "DodatkovaInformace": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "T0099"
 }

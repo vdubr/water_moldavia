@@ -91,7 +91,7 @@
     "EC": 7,
     "O2MgL": 5,
     "O2procenta": 51,
-    "pH": 3,
+    "pH": 6,
     "EH": 128,
     "cOdberVzorku": "",
     "cOdberVzorkuCz": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn0987"
 }

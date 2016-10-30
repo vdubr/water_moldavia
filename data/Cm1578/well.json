@@ -23,8 +23,8 @@
     "BlizsiLokalizaceCZ": "Studna se nachází v ulici M. Muzicescu 37.",
     "DodatkovaInformace": "Coroana fintinii este din lemn, are capac de protectie, lantul este ruginit.",
     "DodatkovaInformaceCZ": "Okruží studny je ze dřeva, má ochranné víko, řetěz je zrezavělý.",
-    "CharakterZdrojeVody": "",
-    "CharakterZdrojeVodyCz": "",
+    "CharakterZdrojeVody": "Fântâna săpată",
+    "CharakterZdrojeVodyCz": "Kopaná studna",
     "HloubkaHladinyLocalInfo": "",
     "HloubkaHladinyMerena": 4,
     "HloubkaStudnyLocalInfo": "",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1578"
 }

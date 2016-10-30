@@ -22,7 +22,7 @@
     "BlizsiLokalizace": "Forajul este localizat la intrarea in localitate, linga foraj este o instalatie de distribuire a gazului._x000d_\nIn apropiere se afla primaria.",
     "BlizsiLokalizaceCZ": "Vrt se nachází při vstupu do obce, vedle vrtu je plynový rozvaděč. V blízkosti je radnice (obecní úřad).",
     "DodatkovaInformace": "De la aceasta sursa se aprovizioneaza circa 260 de case, scoala, biserica, gradinita, punctul medical si primaria._x000d_\nProba a fost colectata de la cea mai apropiata casa de fintina arteziana deoarece direct de la sursa nu este posibil._x000d_\nAdincimea totala este de 300m, apa este pompata de la 150m adincime.",
-    "DodatkovaInformaceCZ": "Tento zdroj zásobuje cca 260 domů, školu, kostel, školku, zdravotní středisko a obecní úřad. Vzorek byl odebrán z nejbližšího domu k artéské studni, protože přístup přímo ke zdroji není možný. Celková hloubka je 300 m, voda je čerpána z hloubky 150 m.",
+    "DodatkovaInformaceCZ": "Tento zdroj zásobuje cca 260 domů, školu, kostel, školku, zdravotní středisko a obecní úřad. Vzorek byl odebrán z nejbližšího domu k vrtu, protože přístup přímo ke zdroji není možný. Celková hloubka je 300 m, voda je čerpána z hloubky 150 m.",
     "CharakterZdrojeVody": "Foraj",
     "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": 150,
@@ -106,5 +106,6 @@
     "rozbory": 2,
     "rozbory2": "z+r",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch5154"
 }

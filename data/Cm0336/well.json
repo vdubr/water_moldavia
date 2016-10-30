@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 40,
     "SouradniceBoduYvteriny": 40,
     "NadmorskaVyskaBodu": 162,
-    "IdFotografieZdroje": "110-3282",
+    "IdFotografieZdroje": "110-3287",
     "BlizsiLokalizace": "Fintina este construita la marginea drumului central.",
     "BlizsiLokalizaceCZ": "Studna je postavena na kraji hlavní cesty.",
     "DodatkovaInformace": "Fintina are acoperis de protectie, este partial ingradita, lantul si scripetele este ruginit.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0336"
 }

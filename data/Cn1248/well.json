@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 16,
     "SouradniceBoduYvteriny": 22,
     "NadmorskaVyskaBodu": 114,
-    "IdFotografieZdroje": "118-6173",
+    "IdFotografieZdroje": 7542,
     "BlizsiLokalizace": "Fantana arteziana este localizata la marginea satului.",
     "BlizsiLokalizaceCZ": "Vrt se nachází na kraji vesnice.",
     "DodatkovaInformace": "Acest foraj este sursa principala de apa a satului, de aici se alimenteaza tot satul Samalia.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cn1248"
 }

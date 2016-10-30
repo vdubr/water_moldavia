@@ -23,8 +23,8 @@
     "BlizsiLokalizaceCZ": "odpovídá Obecní úřad\nperiferie\nhorní část vesnice",
     "DodatkovaInformace": "se afla la drum",
     "DodatkovaInformaceCZ": "nachází se u cesty",
-    "CharakterZdrojeVody": "Fântâna săpată",
-    "CharakterZdrojeVodyCz": "Kopaná studna",
+    "CharakterZdrojeVody": "Foraj",
+    "CharakterZdrojeVodyCz": "Vrt",
     "HloubkaHladinyLocalInfo": 220,
     "HloubkaHladinyMerena": 220,
     "HloubkaStudnyLocalInfo": 260,
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Ch0493"
 }

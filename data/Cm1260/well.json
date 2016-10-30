@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 28,
     "SouradniceBoduYvteriny": 29,
     "NadmorskaVyskaBodu": 86,
-    "IdFotografieZdroje": "114-4579",
+    "IdFotografieZdroje": "114-4570",
     "BlizsiLokalizace": "Fintina este sapata in apropiere cde intersectia drumurilor locale si caseled e locuit si biserica.",
     "BlizsiLokalizaceCZ": "Studna se nachází v blízkosti křižovatky místních cest, v blízkosti obytných domů a kostela.",
     "DodatkovaInformace": "Fintina are acoperis de protectie si capac, este construita din piatra.",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "z",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm1260"
 }

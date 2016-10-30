@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 34,
     "SouradniceBoduYvteriny": 28,
     "NadmorskaVyskaBodu": 108,
-    "IdFotografieZdroje": 1123872,
+    "IdFotografieZdroje": "112-3872",
     "BlizsiLokalizace": "Forajul este localizat la marginea satului, langa scoala.",
     "BlizsiLokalizaceCZ": "Vrt se nachází na kraji obce, vedle školy.",
     "DodatkovaInformace": "Forajul nu este inchis accesului public, nu are gard de protectie, de la aceasta sursa se alimenteaza scoala satului Selemet.",
@@ -106,5 +106,6 @@
     "rozbory": 2,
     "rozbory2": "z+r",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Cm0753"
 }

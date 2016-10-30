@@ -18,7 +18,7 @@
     "SouradniceBoduYminuty": 29,
     "SouradniceBoduYvteriny": 41,
     "NadmorskaVyskaBodu": 145,
-    "IdFotografieZdroje": 4627,
+    "IdFotografieZdroje": 6427,
     "BlizsiLokalizace": "pe teritoriul satului",
     "BlizsiLokalizaceCZ": "na území obce",
     "DodatkovaInformace": "raspunzator primaria_x000d_\neste pe parte dreapta a satului_x000d_\n100 metri de la padure _x000d_\napa este sarata",
@@ -106,5 +106,6 @@
     "rozbory": 1,
     "rozbory2": "",
     "zkontrolováno": 9,
+    "kolo_foceni": 1,
     "uuid": "Lv1119"
 }
