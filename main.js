@@ -21875,7 +21875,7 @@ var Application = (function () {
 exports['default'] = Application;
 module.exports = exports['default'];
 
-},{"./Emitter":250,"./wellfilter/wellFilter":262,"babel-runtime/core-js/promise":8,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14}],249:[function(require,module,exports){
+},{"./Emitter":250,"./wellfilter/wellFilter":254,"babel-runtime/core-js/promise":8,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14}],249:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -21970,7 +21970,7 @@ var ApplicationView = (function (_Component) {
 exports['default'] = ApplicationView;
 module.exports = exports['default'];
 
-},{"./wellInfo/wellinfo":261,"./wellfilter/wellFilterView":263,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],250:[function(require,module,exports){
+},{"./wellInfo/wellinfo":263,"./wellfilter/wellFilterView":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],250:[function(require,module,exports){
 'use strict';
 
 var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
@@ -22052,808 +22052,6 @@ var getPhotoID = function getPhotoID(photo) {
 exports.getPhotoID = getPhotoID;
 
 },{}],254:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Emitter = require('../Emitter');
-
-var _Emitter2 = _interopRequireDefault(_Emitter);
-
-var _i18nI18n = require('../i18n/i18n');
-
-var NavBar = (function (_Component) {
-  _inherits(NavBar, _Component);
-
-  function NavBar() {
-    _classCallCheck(this, NavBar);
-
-    _get(Object.getPrototypeOf(NavBar.prototype), 'constructor', this).apply(this, arguments);
-  }
-
-  _createClass(NavBar, [{
-    key: 'onKeyUp',
-    value: function onKeyUp(evt) {
-      if (evt.keyCode == 27) {
-        _Emitter2['default'].emit('closeWellInfo');
-      }
-    }
-  }, {
-    key: 'componentWillMount',
-    value: function componentWillMount() {
-      document.body.addEventListener('keyup', this.onKeyUp);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      document.body.removeEventListener('keyup', this.onKeyUp);
-    }
-  }, {
-    key: 'onTabClick',
-    value: function onTabClick(evt) {
-      var id = evt.currentTarget.id;
-      _Emitter2['default'].emit('changeActiveTab', id);
-    }
-  }, {
-    key: '_onCloseBtnClick',
-    value: function _onCloseBtnClick() {
-      _Emitter2['default'].emit('closeWellInfo');
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var hasAnalyze = this.props.hasAnalyze;
-
-      return _react2['default'].createElement(
-        'nav',
-        { className: 'navbar navbar-default navbar-fixed-top' },
-        _react2['default'].createElement(
-          'div',
-          { className: 'container-fluid' },
-          _react2['default'].createElement(
-            'div',
-            { className: 'navbar-header', 'data-toggle': 'collapse' },
-            _react2['default'].createElement(
-              'div',
-              { className: 'navbar-header-minimalist visible-xs', id: '#myNavbar' },
-              _react2['default'].createElement(
-                'p',
-                null,
-                getNameByTabID(this.props.activeTab)
-              )
-            ),
-            _react2['default'].createElement(
-              'button',
-              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-              _react2['default'].createElement('span', { className: 'icon-bar' }),
-              _react2['default'].createElement('span', { className: 'icon-bar' }),
-              _react2['default'].createElement('span', { className: 'icon-bar' })
-            )
-          ),
-          _react2['default'].createElement(
-            'div',
-            { className: 'navbar-collapse collapse', id: 'myNavbar' },
-            _react2['default'].createElement(
-              'ul',
-              { className: "nav navbar-nav" },
-              _react2['default'].createElement(
-                'li',
-                { role: 'presentation', className: this.props.activeTab === 'fifth' ? 'active' : '', id: 'fifth', onClick: this.onTabClick },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-                  getNameByTabID('fifth')
-                )
-              ),
-              _react2['default'].createElement(
-                'li',
-                { role: 'presentation', className: this.props.activeTab === 'first' ? 'active' : '', id: 'first', onClick: this.onTabClick },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-                  getNameByTabID('first')
-                )
-              ),
-              _react2['default'].createElement(
-                'li',
-                { role: 'presentation', className: this.props.activeTab === 'second' ? 'active' : '', id: 'second', onClick: this.onTabClick },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-                  getNameByTabID('second')
-                )
-              ),
-              _react2['default'].createElement(
-                'li',
-                { role: 'presentation', className: this.props.activeTab === 'thirth' ? 'active' : '', id: 'thirth', onClick: this.onTabClick },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-                  getNameByTabID('thirth')
-                )
-              ),
-              hasAnalyze ? _react2['default'].createElement(
-                'li',
-                { role: 'presentation', className: this.props.activeTab === 'fourth' ? 'active' : '', id: 'fourth', onClick: this.onTabClick },
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
-                  getNameByTabID('fourth')
-                )
-              ) : null
-            ),
-            _react2['default'].createElement(
-              'ul',
-              { className: "nav navbar-nav navbar-right" },
-              _react2['default'].createElement(
-                'li',
-                null,
-                _react2['default'].createElement(
-                  'a',
-                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar', onClick: this._onCloseBtnClick },
-                  _react2['default'].createElement(
-                    'span',
-                    null,
-                    (0, _i18nI18n.msg)('close'),
-                    ' '
-                  ),
-                  _react2['default'].createElement('i', { className: 'fa fa-times' })
-                )
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return NavBar;
-})(_react.Component);
-
-exports['default'] = NavBar;
-
-var getNameByTabID = function getNameByTabID(tabID) {
-  var title = '';
-  switch (tabID) {
-    case 'first':
-      title = (0, _i18nI18n.msg)('identification');
-      break;
-    case 'second':
-      title = (0, _i18nI18n.msg)('protection');
-      break;
-    case 'thirth':
-      title = (0, _i18nI18n.msg)('measurement');
-      break;
-    case 'fourth':
-      title = (0, _i18nI18n.msg)('analyze');
-      break;
-    case 'fifth':
-      title = (0, _i18nI18n.msg)('about');
-      break;
-  }
-  return title;
-};
-module.exports = exports['default'];
-
-},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],255:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _i18nI18n = require('../i18n/i18n');
-
-var TableRow = (function (_Component) {
-  _inherits(TableRow, _Component);
-
-  function TableRow() {
-    _classCallCheck(this, TableRow);
-
-    _get(Object.getPrototypeOf(TableRow.prototype), 'constructor', this).apply(this, arguments);
-  }
-
-  _createClass(TableRow, [{
-    key: 'render',
-    value: function render() {
-      var val = this.props.val || '';
-      return _react2['default'].createElement(
-        'tr',
-        null,
-        _react2['default'].createElement(
-          'th',
-          null,
-          ' ',
-          (0, _i18nI18n.msg)(this.props.property),
-          ' '
-        ),
-        _react2['default'].createElement(
-          'td',
-          null,
-          ' ',
-          val,
-          ' '
-        )
-      );
-    }
-  }]);
-
-  return TableRow;
-})(_react.Component);
-
-exports.TableRow = TableRow;
-;
-
-var FotoRow = (function (_Component2) {
-  _inherits(FotoRow, _Component2);
-
-  function FotoRow() {
-    _classCallCheck(this, FotoRow);
-
-    _get(Object.getPrototypeOf(FotoRow.prototype), 'constructor', this).apply(this, arguments);
-  }
-
-  _createClass(FotoRow, [{
-    key: 'render',
-    value: function render() {
-      var fotoUrl = this.props.fotoPath + 'IMG_' + this.props.photoID + '.JPG';
-
-      return _react2['default'].createElement(
-        'tr',
-        null,
-        _react2['default'].createElement(
-          'td',
-          { colSpan: '2', style: { textAlign: 'center' } },
-          _react2['default'].createElement('img', { className: 'img-responsive', src: fotoUrl })
-        )
-      );
-    }
-  }]);
-
-  return FotoRow;
-})(_react.Component);
-
-exports.FotoRow = FotoRow;
-;
-
-},{"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],256:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _rows = require('./rows');
-
-var _photoShorter = require('../photoShorter');
-
-var ProtectionContent = (function (_Component) {
-  _inherits(ProtectionContent, _Component);
-
-  function ProtectionContent(props) {
-    _classCallCheck(this, ProtectionContent);
-
-    _get(Object.getPrototypeOf(ProtectionContent.prototype), 'constructor', this).call(this, props);
-
-    this._dataKeys = ['DatumVznikuZaznmu', 'OdberovaSkupina', 'IdFotografieZdroje'];
-  }
-
-  _createClass(ProtectionContent, [{
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      for (var i in this._dataKeys) {
-        var key = this._dataKeys[i];
-        if (key === 'IdFotografieZdroje') {
-          rows.push(_react2['default'].createElement(_rows.FotoRow, {
-            key: i,
-            fotoPath: this.props.fotoPath,
-            photoID: (0, _photoShorter.getPhotoID)(this.props.data[key]),
-            property: key }));
-        } else {
-          rows.push(_react2['default'].createElement(_rows.TableRow, {
-            key: i,
-            property: key,
-            val: this.props.data[key] }));
-        }
-      }
-
-      return _react2['default'].createElement(
-        'table',
-        { className: 'table' },
-        _react2['default'].createElement(
-          'tbody',
-          null,
-          rows
-        )
-      );
-    }
-  }]);
-
-  return ProtectionContent;
-})(_react.Component);
-
-exports['default'] = ProtectionContent;
-module.exports = exports['default'];
-
-},{"../photoShorter":253,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],257:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _rows = require('./rows');
-
-var _i18nI18n = require('../i18n/i18n');
-
-var _main = require('../main');
-
-var AnalyzeContent = (function (_Component) {
-  _inherits(AnalyzeContent, _Component);
-
-  function AnalyzeContent(props) {
-    _classCallCheck(this, AnalyzeContent);
-
-    _get(Object.getPrototypeOf(AnalyzeContent.prototype), 'constructor', this).call(this, props);
-
-    this._dataKeys = [];
-  }
-
-  _createClass(AnalyzeContent, [{
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      // for (let i in this._dataKeys) {
-      //   let key = this._dataKeys[i]
-      //   rows.push(<TableRow key = {i} property = {key} val = {this.props.data[key]} />)
-      // }
-      var baseSamplePath = _main.baseURL + 'fotky/PDF/';
-      var sampleId = this.props.data.SampleId;
-      var sampleUrl = '' + baseSamplePath + sampleId + '.pdf';
-      return _react2['default'].createElement(
-        'table',
-        { className: 'table' },
-        _react2['default'].createElement(
-          'tbody',
-          null,
-          _react2['default'].createElement(
-            'tr',
-            null,
-            _react2['default'].createElement(
-              'td',
-              null,
-              (0, _i18nI18n.msg)('analyze')
-            ),
-            _react2['default'].createElement(
-              'td',
-              null,
-              _react2['default'].createElement(
-                'a',
-                { href: sampleUrl, target: "_blank" },
-                (0, _i18nI18n.msg)('link')
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
-
-  return AnalyzeContent;
-})(_react.Component);
-
-exports['default'] = AnalyzeContent;
-module.exports = exports['default'];
-
-},{"../i18n/i18n":251,"../main":252,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],258:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _rows = require('./rows');
-
-var IdentificationContent = (function (_Component) {
-  _inherits(IdentificationContent, _Component);
-
-  function IdentificationContent(props) {
-    _classCallCheck(this, IdentificationContent);
-
-    _get(Object.getPrototypeOf(IdentificationContent.prototype), 'constructor', this).call(this, props);
-
-    this._dataKeys = ['BodRegion', 'Obec', 'BodRegionCislo', 'CharakterZdrojeVody', 'VydatnosZdroje', 'HloubkaStudnyLocalInfo', 'HloubkaStudnyMrena', 'HloubkaHladinyLocalInfo', 'HloubkaHladinyMerena', 'ZrizovatlZdroje', 'ZrizeniDatum', 'SouradniceBobuXstupne', 'SouradniceBobuXminuty', 'SouradniceBobuXvteriny', 'SouradniceBoduYstupne', 'SouradniceBoduYminuty', 'SouradniceBoduYvteriny', 'DulezitostProObec', 'DodatkovaInformace'];
-  }
-
-  _createClass(IdentificationContent, [{
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      for (var i in this._dataKeys) {
-        var key = this._dataKeys[i];
-        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: this.props.data[key] }));
-      }
-
-      return _react2['default'].createElement(
-        'table',
-        { className: 'table' },
-        _react2['default'].createElement(
-          'tbody',
-          null,
-          rows
-        )
-      );
-    }
-  }]);
-
-  return IdentificationContent;
-})(_react.Component);
-
-exports['default'] = IdentificationContent;
-module.exports = exports['default'];
-
-},{"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],259:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _rows = require('./rows');
-
-var _i18nI18n = require('../i18n/i18n');
-
-var MeasurementContent = (function (_Component) {
-  _inherits(MeasurementContent, _Component);
-
-  function MeasurementContent(props) {
-    _classCallCheck(this, MeasurementContent);
-
-    _get(Object.getPrototypeOf(MeasurementContent.prototype), 'constructor', this).call(this, props);
-
-    this._dataKeys = ['OrganleptickeZnecisteni', 'ZavadnostMistniInformace', 'DobraVodaMistniInformace', 'Teplota', 'EC', 'O2MgL', 'O2procenta', 'pH', 'OdberVzorku', 'Zakal', 'EH'];
-  }
-
-  _createClass(MeasurementContent, [{
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      for (var i in this._dataKeys) {
-        var key = this._dataKeys[i];
-        var value = this.props.data[key];
-        if (value === 'FALSE') {
-          value = (0, _i18nI18n.msg)('no');
-        } else if (value === 'TRUE') {
-          value = (0, _i18nI18n.msg)('yes');
-        }
-
-        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: value }));
-      }
-
-      return _react2['default'].createElement(
-        'table',
-        { className: 'table' },
-        _react2['default'].createElement(
-          'tbody',
-          null,
-          rows
-        )
-      );
-    }
-  }]);
-
-  return MeasurementContent;
-})(_react.Component);
-
-exports['default'] = MeasurementContent;
-module.exports = exports['default'];
-
-},{"../i18n/i18n":251,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _rows = require('./rows');
-
-var _photoShorter = require('../photoShorter');
-
-var ProtectionContent = (function (_Component) {
-  _inherits(ProtectionContent, _Component);
-
-  function ProtectionContent(props) {
-    _classCallCheck(this, ProtectionContent);
-
-    _get(Object.getPrototypeOf(ProtectionContent.prototype), 'constructor', this).call(this, props);
-
-    this._dataKeys = ['PovrchoveTesneni', 'PovrchovaVodaVztah', 'TokVztah', 'SilniceVzdalenost', 'ObecnaOchrana', 'OchrannePasmo', 'Plot', 'SouradniceZnecisteniXstupne', 'SouradniceZnecisteniXminuty', 'SouradniceZnecisteniXvteriny', 'SouradniceZnecisteniYstupne', 'SouradniceZnecisteniYminuty', 'SouradniceZnecisteniYvteriny', 'ZdrojZnecisteni', 'ZdrojZnecisteniPopis', 'ZnecisteniFoto'];
-  }
-
-  _createClass(ProtectionContent, [{
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      for (var i in this._dataKeys) {
-        var key = this._dataKeys[i];
-        var value = this.props.data[key];
-        if (key === 'ZnecisteniFoto' && value !== '') {
-
-          rows.push(_react2['default'].createElement(_rows.FotoRow, {
-            key: i,
-            fotoPath: this.props.fotoPath,
-            photoID: (0, _photoShorter.getPhotoID)(value),
-            property: key }));
-        } else {
-          rows.push(_react2['default'].createElement(_rows.TableRow, {
-            key: i,
-            property: key,
-            val: value }));
-        }
-      }
-
-      return _react2['default'].createElement(
-        'table',
-        { className: 'table' },
-        _react2['default'].createElement(
-          'tbody',
-          null,
-          rows
-        )
-      );
-    }
-  }]);
-
-  return ProtectionContent;
-})(_react.Component);
-
-exports['default'] = ProtectionContent;
-module.exports = exports['default'];
-
-},{"../photoShorter":253,"./rows":255,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],261:[function(require,module,exports){
-'use strict';
-
-var _get = require('babel-runtime/helpers/get')['default'];
-
-var _inherits = require('babel-runtime/helpers/inherits')['default'];
-
-var _createClass = require('babel-runtime/helpers/create-class')['default'];
-
-var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
-
-var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
-
-Object.defineProperty(exports, '__esModule', {
-  value: true
-});
-
-var _react = require('react');
-
-var _react2 = _interopRequireDefault(_react);
-
-var _Emitter = require('../Emitter');
-
-var _Emitter2 = _interopRequireDefault(_Emitter);
-
-var _navbar = require('./navbar');
-
-var _navbar2 = _interopRequireDefault(_navbar);
-
-var _tabIdentification = require('./tabIdentification');
-
-var _tabIdentification2 = _interopRequireDefault(_tabIdentification);
-
-var _tabProtection = require('./tabProtection');
-
-var _tabProtection2 = _interopRequireDefault(_tabProtection);
-
-var _tabMeasurement = require('./tabMeasurement');
-
-var _tabMeasurement2 = _interopRequireDefault(_tabMeasurement);
-
-var _tabAnalyze = require('./tabAnalyze');
-
-var _tabAnalyze2 = _interopRequireDefault(_tabAnalyze);
-
-var _tabAbout = require('./tabAbout');
-
-var _tabAbout2 = _interopRequireDefault(_tabAbout);
-
-var _main = require('../main');
-
-var WellInfo = (function (_Component) {
-  _inherits(WellInfo, _Component);
-
-  function WellInfo(props) {
-    _classCallCheck(this, WellInfo);
-
-    _get(Object.getPrototypeOf(WellInfo.prototype), 'constructor', this).call(this, props);
-
-    // this.baseFotoPath = 'http://vojta.dubrovsky.eu:4446/test/fotky/';
-    this.baseFotoPath = _main.baseURL + 'fotky/';
-
-    this.props = {
-      isVisible: false,
-      data: null,
-      activeTab: 'fifth'
-    };
-  }
-
-  _createClass(WellInfo, [{
-    key: 'getContent',
-    value: function getContent(activeTab, data) {
-      var fotoPath = undefined;
-      if (data.OdberovaSkupina) {
-        fotoPath = this.baseFotoPath + '/' + data.OdberovaSkupina + '/';
-      }
-
-      var content = undefined;
-      switch (this.props.activeTab) {
-        case 'first':
-          content = _react2['default'].createElement(_tabIdentification2['default'], { data: data });
-          break;
-        case 'second':
-          content = _react2['default'].createElement(_tabProtection2['default'], { data: data, fotoPath: fotoPath ? fotoPath : null });
-          break;
-        case 'thirth':
-          content = _react2['default'].createElement(_tabMeasurement2['default'], { data: data });
-          break;
-        case 'fourth':
-          content = _react2['default'].createElement(_tabAnalyze2['default'], { data: data });
-          break;
-        case 'fifth':
-          content = _react2['default'].createElement(_tabAbout2['default'], { data: data, fotoPath: fotoPath ? fotoPath : null });
-          break;
-        default:
-          content = null;
-          break;
-      }
-      return content;
-    }
-  }, {
-    key: '_onCloseBtnClick',
-    value: function _onCloseBtnClick() {
-      _Emitter2['default'].emit('closeWellInfo');
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      var rows = [];
-      if (!this.props.isVisible) {
-        return null;
-      } else {
-        var content = this.getContent(this.props.activeTab, this.props.data);
-        var style = {
-          display: this.props.isVisible ? 'block' : 'none'
-        };
-        var hasAnalyze = this.props.data.rozbory2 !== '';
-
-        return _react2['default'].createElement(
-          'div',
-          {
-            className: 'wellInfo',
-            style: style },
-          _react2['default'].createElement(_navbar2['default'], { activeTab: this.props.activeTab, hasAnalyze: hasAnalyze }),
-          _react2['default'].createElement(
-            'div',
-            { className: 'wellContent' },
-            content
-          )
-        );
-      }
-    }
-  }]);
-
-  return WellInfo;
-})(_react.Component);
-
-;
-
-exports['default'] = WellInfo;
-module.exports = exports['default'];
-
-},{"../Emitter":250,"../main":252,"./navbar":254,"./tabAbout":256,"./tabAnalyze":257,"./tabIdentification":258,"./tabMeasurement":259,"./tabProtection":260,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],262:[function(require,module,exports){
 'use strict';
 
 var _createClass = require('babel-runtime/helpers/create-class')['default'];
@@ -23148,7 +22346,7 @@ var WellFilter = (function () {
 exports['default'] = WellFilter;
 module.exports = exports['default'];
 
-},{"../Emitter":250,"babel-runtime/core-js/array/from":1,"babel-runtime/core-js/object/keys":6,"babel-runtime/core-js/promise":8,"babel-runtime/core-js/set":9,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14,"babel-runtime/helpers/to-consumable-array":15}],263:[function(require,module,exports){
+},{"../Emitter":250,"babel-runtime/core-js/array/from":1,"babel-runtime/core-js/object/keys":6,"babel-runtime/core-js/promise":8,"babel-runtime/core-js/set":9,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/interop-require-default":14,"babel-runtime/helpers/to-consumable-array":15}],255:[function(require,module,exports){
 'use strict';
 
 var _get = require('babel-runtime/helpers/get')['default'];
@@ -23493,7 +22691,809 @@ var WellFilterView = (function (_Component4) {
 exports['default'] = WellFilterView;
 module.exports = exports['default'];
 
-},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/core-js/object/assign":2,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}]},{},[252])
+},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/core-js/object/assign":2,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],256:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Emitter = require('../Emitter');
+
+var _Emitter2 = _interopRequireDefault(_Emitter);
+
+var _i18nI18n = require('../i18n/i18n');
+
+var NavBar = (function (_Component) {
+  _inherits(NavBar, _Component);
+
+  function NavBar() {
+    _classCallCheck(this, NavBar);
+
+    _get(Object.getPrototypeOf(NavBar.prototype), 'constructor', this).apply(this, arguments);
+  }
+
+  _createClass(NavBar, [{
+    key: 'onKeyUp',
+    value: function onKeyUp(evt) {
+      if (evt.keyCode == 27) {
+        _Emitter2['default'].emit('closeWellInfo');
+      }
+    }
+  }, {
+    key: 'componentWillMount',
+    value: function componentWillMount() {
+      document.body.addEventListener('keyup', this.onKeyUp);
+    }
+  }, {
+    key: 'componentWillUnmount',
+    value: function componentWillUnmount() {
+      document.body.removeEventListener('keyup', this.onKeyUp);
+    }
+  }, {
+    key: 'onTabClick',
+    value: function onTabClick(evt) {
+      var id = evt.currentTarget.id;
+      _Emitter2['default'].emit('changeActiveTab', id);
+    }
+  }, {
+    key: '_onCloseBtnClick',
+    value: function _onCloseBtnClick() {
+      _Emitter2['default'].emit('closeWellInfo');
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var hasAnalyze = this.props.hasAnalyze;
+
+      return _react2['default'].createElement(
+        'nav',
+        { className: 'navbar navbar-default navbar-fixed-top' },
+        _react2['default'].createElement(
+          'div',
+          { className: 'container-fluid' },
+          _react2['default'].createElement(
+            'div',
+            { className: 'navbar-header', 'data-toggle': 'collapse' },
+            _react2['default'].createElement(
+              'div',
+              { className: 'navbar-header-minimalist visible-xs', id: '#myNavbar' },
+              _react2['default'].createElement(
+                'p',
+                null,
+                getNameByTabID(this.props.activeTab)
+              )
+            ),
+            _react2['default'].createElement(
+              'button',
+              { type: 'button', className: 'navbar-toggle', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+              _react2['default'].createElement('span', { className: 'icon-bar' }),
+              _react2['default'].createElement('span', { className: 'icon-bar' }),
+              _react2['default'].createElement('span', { className: 'icon-bar' })
+            )
+          ),
+          _react2['default'].createElement(
+            'div',
+            { className: 'navbar-collapse collapse', id: 'myNavbar' },
+            _react2['default'].createElement(
+              'ul',
+              { className: "nav navbar-nav" },
+              _react2['default'].createElement(
+                'li',
+                { role: 'presentation', className: this.props.activeTab === 'fifth' ? 'active' : '', id: 'fifth', onClick: this.onTabClick },
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('fifth')
+                )
+              ),
+              _react2['default'].createElement(
+                'li',
+                { role: 'presentation', className: this.props.activeTab === 'first' ? 'active' : '', id: 'first', onClick: this.onTabClick },
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('first')
+                )
+              ),
+              _react2['default'].createElement(
+                'li',
+                { role: 'presentation', className: this.props.activeTab === 'second' ? 'active' : '', id: 'second', onClick: this.onTabClick },
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('second')
+                )
+              ),
+              _react2['default'].createElement(
+                'li',
+                { role: 'presentation', className: this.props.activeTab === 'thirth' ? 'active' : '', id: 'thirth', onClick: this.onTabClick },
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('thirth')
+                )
+              ),
+              hasAnalyze ? _react2['default'].createElement(
+                'li',
+                { role: 'presentation', className: this.props.activeTab === 'fourth' ? 'active' : '', id: 'fourth', onClick: this.onTabClick },
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar' },
+                  getNameByTabID('fourth')
+                )
+              ) : null
+            ),
+            _react2['default'].createElement(
+              'ul',
+              { className: "nav navbar-nav navbar-right" },
+              _react2['default'].createElement(
+                'li',
+                null,
+                _react2['default'].createElement(
+                  'a',
+                  { href: '#', 'data-toggle': 'collapse', 'data-target': '#myNavbar', onClick: this._onCloseBtnClick },
+                  _react2['default'].createElement(
+                    'span',
+                    null,
+                    (0, _i18nI18n.msg)('close'),
+                    ' '
+                  ),
+                  _react2['default'].createElement('i', { className: 'fa fa-times' })
+                )
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return NavBar;
+})(_react.Component);
+
+exports['default'] = NavBar;
+
+var getNameByTabID = function getNameByTabID(tabID) {
+  var title = '';
+  switch (tabID) {
+    case 'first':
+      title = (0, _i18nI18n.msg)('identification');
+      break;
+    case 'second':
+      title = (0, _i18nI18n.msg)('protection');
+      break;
+    case 'thirth':
+      title = (0, _i18nI18n.msg)('measurement');
+      break;
+    case 'fourth':
+      title = (0, _i18nI18n.msg)('analyze');
+      break;
+    case 'fifth':
+      title = (0, _i18nI18n.msg)('about');
+      break;
+  }
+  return title;
+};
+module.exports = exports['default'];
+
+},{"../Emitter":250,"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],257:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _i18nI18n = require('../i18n/i18n');
+
+var TableRow = (function (_Component) {
+  _inherits(TableRow, _Component);
+
+  function TableRow() {
+    _classCallCheck(this, TableRow);
+
+    _get(Object.getPrototypeOf(TableRow.prototype), 'constructor', this).apply(this, arguments);
+  }
+
+  _createClass(TableRow, [{
+    key: 'render',
+    value: function render() {
+      var val = this.props.val || '';
+      return _react2['default'].createElement(
+        'tr',
+        null,
+        _react2['default'].createElement(
+          'th',
+          null,
+          ' ',
+          (0, _i18nI18n.msg)(this.props.property),
+          ' '
+        ),
+        _react2['default'].createElement(
+          'td',
+          null,
+          ' ',
+          val,
+          ' '
+        )
+      );
+    }
+  }]);
+
+  return TableRow;
+})(_react.Component);
+
+exports.TableRow = TableRow;
+;
+
+var FotoRow = (function (_Component2) {
+  _inherits(FotoRow, _Component2);
+
+  function FotoRow() {
+    _classCallCheck(this, FotoRow);
+
+    _get(Object.getPrototypeOf(FotoRow.prototype), 'constructor', this).apply(this, arguments);
+  }
+
+  _createClass(FotoRow, [{
+    key: 'render',
+    value: function render() {
+      var fotoUrl = this.props.fotoPath + 'IMG_' + this.props.photoID + '.JPG';
+
+      return _react2['default'].createElement(
+        'tr',
+        null,
+        _react2['default'].createElement(
+          'td',
+          { colSpan: '2', style: { textAlign: 'center' } },
+          _react2['default'].createElement('img', { className: 'img-responsive', src: fotoUrl })
+        )
+      );
+    }
+  }]);
+
+  return FotoRow;
+})(_react.Component);
+
+exports.FotoRow = FotoRow;
+;
+
+},{"../i18n/i18n":251,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],258:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _rows = require('./rows');
+
+var _photoShorter = require('../photoShorter');
+
+var ProtectionContent = (function (_Component) {
+  _inherits(ProtectionContent, _Component);
+
+  function ProtectionContent(props) {
+    _classCallCheck(this, ProtectionContent);
+
+    _get(Object.getPrototypeOf(ProtectionContent.prototype), 'constructor', this).call(this, props);
+
+    this._dataKeys = ['DatumVznikuZaznmu', 'OdberovaSkupina', 'IdFotografieZdroje'];
+  }
+
+  _createClass(ProtectionContent, [{
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      for (var i in this._dataKeys) {
+        var key = this._dataKeys[i];
+        if (key === 'IdFotografieZdroje') {
+          rows.push(_react2['default'].createElement(_rows.FotoRow, {
+            key: i,
+            fotoPath: this.props.fotoPath,
+            photoID: (0, _photoShorter.getPhotoID)(this.props.data[key]),
+            property: key }));
+        } else {
+          rows.push(_react2['default'].createElement(_rows.TableRow, {
+            key: i,
+            property: key,
+            val: this.props.data[key] }));
+        }
+      }
+
+      return _react2['default'].createElement(
+        'table',
+        { className: 'table' },
+        _react2['default'].createElement(
+          'tbody',
+          null,
+          rows
+        )
+      );
+    }
+  }]);
+
+  return ProtectionContent;
+})(_react.Component);
+
+exports['default'] = ProtectionContent;
+module.exports = exports['default'];
+
+},{"../photoShorter":253,"./rows":257,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],259:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _rows = require('./rows');
+
+var _i18nI18n = require('../i18n/i18n');
+
+var _main = require('../main');
+
+var AnalyzeContent = (function (_Component) {
+  _inherits(AnalyzeContent, _Component);
+
+  function AnalyzeContent(props) {
+    _classCallCheck(this, AnalyzeContent);
+
+    _get(Object.getPrototypeOf(AnalyzeContent.prototype), 'constructor', this).call(this, props);
+
+    this._dataKeys = [];
+  }
+
+  _createClass(AnalyzeContent, [{
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      // for (let i in this._dataKeys) {
+      //   let key = this._dataKeys[i]
+      //   rows.push(<TableRow key = {i} property = {key} val = {this.props.data[key]} />)
+      // }
+      var baseSamplePath = _main.baseURL + 'data/PDF/';
+      var sampleId = this.props.data.SampleId;
+      var sampleUrl = '' + baseSamplePath + sampleId + '.pdf';
+      return _react2['default'].createElement(
+        'table',
+        { className: 'table' },
+        _react2['default'].createElement(
+          'tbody',
+          null,
+          _react2['default'].createElement(
+            'tr',
+            null,
+            _react2['default'].createElement(
+              'td',
+              null,
+              (0, _i18nI18n.msg)('analyze')
+            ),
+            _react2['default'].createElement(
+              'td',
+              null,
+              _react2['default'].createElement(
+                'a',
+                { href: sampleUrl, target: "_blank" },
+                (0, _i18nI18n.msg)('link')
+              )
+            )
+          )
+        )
+      );
+    }
+  }]);
+
+  return AnalyzeContent;
+})(_react.Component);
+
+exports['default'] = AnalyzeContent;
+module.exports = exports['default'];
+
+},{"../i18n/i18n":251,"../main":252,"./rows":257,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],260:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _rows = require('./rows');
+
+var IdentificationContent = (function (_Component) {
+  _inherits(IdentificationContent, _Component);
+
+  function IdentificationContent(props) {
+    _classCallCheck(this, IdentificationContent);
+
+    _get(Object.getPrototypeOf(IdentificationContent.prototype), 'constructor', this).call(this, props);
+
+    this._dataKeys = ['BodRegion', 'Obec', 'BodRegionCislo', 'CharakterZdrojeVody', 'VydatnosZdroje', 'HloubkaStudnyLocalInfo', 'HloubkaStudnyMrena', 'HloubkaHladinyLocalInfo', 'HloubkaHladinyMerena', 'ZrizovatlZdroje', 'ZrizeniDatum', 'SouradniceBobuXstupne', 'SouradniceBobuXminuty', 'SouradniceBobuXvteriny', 'SouradniceBoduYstupne', 'SouradniceBoduYminuty', 'SouradniceBoduYvteriny', 'DulezitostProObec', 'DodatkovaInformace'];
+  }
+
+  _createClass(IdentificationContent, [{
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      for (var i in this._dataKeys) {
+        var key = this._dataKeys[i];
+        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: this.props.data[key] }));
+      }
+
+      return _react2['default'].createElement(
+        'table',
+        { className: 'table' },
+        _react2['default'].createElement(
+          'tbody',
+          null,
+          rows
+        )
+      );
+    }
+  }]);
+
+  return IdentificationContent;
+})(_react.Component);
+
+exports['default'] = IdentificationContent;
+module.exports = exports['default'];
+
+},{"./rows":257,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],261:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _rows = require('./rows');
+
+var _i18nI18n = require('../i18n/i18n');
+
+var MeasurementContent = (function (_Component) {
+  _inherits(MeasurementContent, _Component);
+
+  function MeasurementContent(props) {
+    _classCallCheck(this, MeasurementContent);
+
+    _get(Object.getPrototypeOf(MeasurementContent.prototype), 'constructor', this).call(this, props);
+
+    this._dataKeys = ['OrganleptickeZnecisteni', 'ZavadnostMistniInformace', 'DobraVodaMistniInformace', 'Teplota', 'EC', 'O2MgL', 'O2procenta', 'pH', 'OdberVzorku', 'Zakal', 'EH'];
+  }
+
+  _createClass(MeasurementContent, [{
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      for (var i in this._dataKeys) {
+        var key = this._dataKeys[i];
+        var value = this.props.data[key];
+        if (value === 'FALSE') {
+          value = (0, _i18nI18n.msg)('no');
+        } else if (value === 'TRUE') {
+          value = (0, _i18nI18n.msg)('yes');
+        }
+
+        rows.push(_react2['default'].createElement(_rows.TableRow, { key: i, property: key, val: value }));
+      }
+
+      return _react2['default'].createElement(
+        'table',
+        { className: 'table' },
+        _react2['default'].createElement(
+          'tbody',
+          null,
+          rows
+        )
+      );
+    }
+  }]);
+
+  return MeasurementContent;
+})(_react.Component);
+
+exports['default'] = MeasurementContent;
+module.exports = exports['default'];
+
+},{"../i18n/i18n":251,"./rows":257,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],262:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _rows = require('./rows');
+
+var _photoShorter = require('../photoShorter');
+
+var ProtectionContent = (function (_Component) {
+  _inherits(ProtectionContent, _Component);
+
+  function ProtectionContent(props) {
+    _classCallCheck(this, ProtectionContent);
+
+    _get(Object.getPrototypeOf(ProtectionContent.prototype), 'constructor', this).call(this, props);
+
+    this._dataKeys = ['PovrchoveTesneni', 'PovrchovaVodaVztah', 'TokVztah', 'SilniceVzdalenost', 'ObecnaOchrana', 'OchrannePasmo', 'Plot', 'SouradniceZnecisteniXstupne', 'SouradniceZnecisteniXminuty', 'SouradniceZnecisteniXvteriny', 'SouradniceZnecisteniYstupne', 'SouradniceZnecisteniYminuty', 'SouradniceZnecisteniYvteriny', 'ZdrojZnecisteni', 'ZdrojZnecisteniPopis', 'ZnecisteniFoto'];
+  }
+
+  _createClass(ProtectionContent, [{
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      for (var i in this._dataKeys) {
+        var key = this._dataKeys[i];
+        var value = this.props.data[key];
+        if (key === 'ZnecisteniFoto' && value !== '') {
+
+          rows.push(_react2['default'].createElement(_rows.FotoRow, {
+            key: i,
+            fotoPath: this.props.fotoPath,
+            photoID: (0, _photoShorter.getPhotoID)(value),
+            property: key }));
+        } else {
+          rows.push(_react2['default'].createElement(_rows.TableRow, {
+            key: i,
+            property: key,
+            val: value }));
+        }
+      }
+
+      return _react2['default'].createElement(
+        'table',
+        { className: 'table' },
+        _react2['default'].createElement(
+          'tbody',
+          null,
+          rows
+        )
+      );
+    }
+  }]);
+
+  return ProtectionContent;
+})(_react.Component);
+
+exports['default'] = ProtectionContent;
+module.exports = exports['default'];
+
+},{"../photoShorter":253,"./rows":257,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}],263:[function(require,module,exports){
+'use strict';
+
+var _get = require('babel-runtime/helpers/get')['default'];
+
+var _inherits = require('babel-runtime/helpers/inherits')['default'];
+
+var _createClass = require('babel-runtime/helpers/create-class')['default'];
+
+var _classCallCheck = require('babel-runtime/helpers/class-call-check')['default'];
+
+var _interopRequireDefault = require('babel-runtime/helpers/interop-require-default')['default'];
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+var _react = require('react');
+
+var _react2 = _interopRequireDefault(_react);
+
+var _Emitter = require('../Emitter');
+
+var _Emitter2 = _interopRequireDefault(_Emitter);
+
+var _navbar = require('./navbar');
+
+var _navbar2 = _interopRequireDefault(_navbar);
+
+var _tabIdentification = require('./tabIdentification');
+
+var _tabIdentification2 = _interopRequireDefault(_tabIdentification);
+
+var _tabProtection = require('./tabProtection');
+
+var _tabProtection2 = _interopRequireDefault(_tabProtection);
+
+var _tabMeasurement = require('./tabMeasurement');
+
+var _tabMeasurement2 = _interopRequireDefault(_tabMeasurement);
+
+var _tabAnalyze = require('./tabAnalyze');
+
+var _tabAnalyze2 = _interopRequireDefault(_tabAnalyze);
+
+var _tabAbout = require('./tabAbout');
+
+var _tabAbout2 = _interopRequireDefault(_tabAbout);
+
+var _main = require('../main');
+
+var WellInfo = (function (_Component) {
+  _inherits(WellInfo, _Component);
+
+  function WellInfo(props) {
+    _classCallCheck(this, WellInfo);
+
+    _get(Object.getPrototypeOf(WellInfo.prototype), 'constructor', this).call(this, props);
+
+    // this.baseFotoPath = 'http://vojta.dubrovsky.eu:4446/test/data/';
+    this.baseFotoPath = _main.baseURL + 'data/';
+
+    this.props = {
+      isVisible: false,
+      data: null,
+      activeTab: 'fifth'
+    };
+  }
+
+  _createClass(WellInfo, [{
+    key: 'getContent',
+    value: function getContent(activeTab, data) {
+      var fotoPath = undefined;
+      if (data.OdberovaSkupina && data.kolo_foceni) {
+        fotoPath = this.baseFotoPath + '/' + data.OdberovaSkupina + '_' + data.kolo_foceni + '/';
+      }
+
+      var content = undefined;
+      switch (this.props.activeTab) {
+        case 'first':
+          content = _react2['default'].createElement(_tabIdentification2['default'], { data: data });
+          break;
+        case 'second':
+          content = _react2['default'].createElement(_tabProtection2['default'], { data: data, fotoPath: fotoPath ? fotoPath : null });
+          break;
+        case 'thirth':
+          content = _react2['default'].createElement(_tabMeasurement2['default'], { data: data });
+          break;
+        case 'fourth':
+          content = _react2['default'].createElement(_tabAnalyze2['default'], { data: data });
+          break;
+        case 'fifth':
+          content = _react2['default'].createElement(_tabAbout2['default'], { data: data, fotoPath: fotoPath ? fotoPath : null });
+          break;
+        default:
+          content = null;
+          break;
+      }
+      return content;
+    }
+  }, {
+    key: '_onCloseBtnClick',
+    value: function _onCloseBtnClick() {
+      _Emitter2['default'].emit('closeWellInfo');
+    }
+  }, {
+    key: 'render',
+    value: function render() {
+      var rows = [];
+      if (!this.props.isVisible) {
+        return null;
+      } else {
+        var content = this.getContent(this.props.activeTab, this.props.data);
+        var style = {
+          display: this.props.isVisible ? 'block' : 'none'
+        };
+        var hasAnalyze = this.props.data.rozbory2 !== '';
+
+        return _react2['default'].createElement(
+          'div',
+          {
+            className: 'wellInfo',
+            style: style },
+          _react2['default'].createElement(_navbar2['default'], { activeTab: this.props.activeTab, hasAnalyze: hasAnalyze }),
+          _react2['default'].createElement(
+            'div',
+            { className: 'wellContent' },
+            content
+          )
+        );
+      }
+    }
+  }]);
+
+  return WellInfo;
+})(_react.Component);
+
+;
+
+exports['default'] = WellInfo;
+module.exports = exports['default'];
+
+},{"../Emitter":250,"../main":252,"./navbar":256,"./tabAbout":258,"./tabAnalyze":259,"./tabIdentification":260,"./tabMeasurement":261,"./tabProtection":262,"babel-runtime/helpers/class-call-check":10,"babel-runtime/helpers/create-class":11,"babel-runtime/helpers/get":12,"babel-runtime/helpers/inherits":13,"babel-runtime/helpers/interop-require-default":14,"react":247}]},{},[252])
 
 
 //# sourceMappingURL=main.js.map
